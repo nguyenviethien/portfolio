@@ -115,7 +115,8 @@ function App() {
   const [cvData, setCvData] = useState(null);
   useEffect(() => {
     let active = true;
-    fetch(process.env.PUBLIC_URL + '/assets/cv.json')
+    const bust = (process.env.REACT_APP_BUILD || Date.now());
+    fetch(process.env.PUBLIC_URL + '/assets/cv.json?v=' + bust, { cache: 'no-cache' })
       .then((r) => (r.ok ? r.json() : null))
       .then((json) => {
         if (active) setCvData(json);
@@ -303,7 +304,8 @@ function ResumeSection({ resumeData }) {
       return;
     }
     let active = true;
-    fetch(process.env.PUBLIC_URL + '/assets/resume.json')
+    const bust = (process.env.REACT_APP_BUILD || Date.now());
+    fetch(process.env.PUBLIC_URL + '/assets/resume.json?v=' + bust, { cache: 'no-cache' })
       .then((r) => (r.ok ? r.json() : null))
       .then((json) => {
         if (active) setData(json);
