@@ -1,0 +1,103 @@
+{
+  "name": "Nguyen Viet Hien",
+  "contact": {
+    "email": "nguyenviethien@gmail.com",
+    "phone": "010-8683-1183",
+    "address": "대전 유성구 송강동",
+    "linkedin": "",
+    "portfolio": ""
+  },
+  "summary": [
+    "Senior Software Developer với 19+ năm kinh nghiệm (Desktop, Embedded, Web).",
+    "Hiện làm tại (주) 뉴케어 – phát triển phần mềm giao tiếp máy đo phóng xạ, desktop và web.",
+    "Thành thạo C#/.NET, WPF, MFC, C++/Qt; Web với ASP.NET MVC/Web API, React; Python/Flask; DB SQL/SQLite.",
+    "Kinh nghiệm giao tiếp thiết bị: USB/WiFi/HID, socket/serial, đa luồng, đồng bộ thiết bị-PC.",
+    "Quốc tế: từng làm với khách hàng Mỹ, Úc, Singapore, Anh, Nhật; làm việc tại Hàn Quốc ~7 năm.",
+    "Tiếng Anh TOEIC 710; tiếng Hàn giao tiếp hằng ngày; F5 영주권, 사회통합프로그램 6단계." 
+  ],
+  "skills": [
+    ".NET", "C#", "WPF", "MFC", "C++", "Qt", "ASP.NET MVC", "ASP.NET Web API",
+    "Java", "Spring Boot", "Spring MVC", "MyBatis", "TypeScript", "Angular", "React",
+    "JavaScript", "jQuery", "Highcharts", "SignalR", "DevExpress", "Entity Framework",
+    "MySQL", "MariaDB", "SQL Server", "SQLite", "Python", "Flask", "HTML5", "CSS3",
+    "Tomcat", "Git", "SVN", "Socket", "Serial", "USB HID", "Embedded Linux (Buildroot)"
+  ],
+  "education": [
+    "2012.09 – 2014.06 · 외국무역대학교 (석사과정) 경영학과 · GPA 84/100",
+    "2001.09 – 2006.05 · 하노이 공과대학교 정보기술학과 · GPA 75/100"
+  ],
+  "experiences": [
+    {
+      "period": "2022.09 – 재직중",
+      "title": "선임연구원 / Senior Software Developer",
+      "company": "(주) 뉴케어",
+      "highlights": [
+        "데스크톱: 방사선 검출기와 Bluetooth/USB 통신, 프로토콜 정의, WPF/MFC UI, Infragistics 차트, 장치-PC 동기화, USB/소켓 명령 처리.",
+        "임베디드: 리눅스 기반 휴대용 검출기 앱, USB/WiFi, 커스텀 키보드, STM32 기반 CSV/PDF 리포트, USB HID 통신, Buildroot.",
+        "웹: 실시간 모니터링, 이력 DB 재설계, 지도 기반 추적, 선량/스펙트럼 시각화 (ReactJS, Flask, Spring Boot, MyBatis).",
+        "스택: C#, WPF, C++/MFC, MVVM Light, Infragistics, SQLite, Socket/Serial, Linux Buildroot, Qt, STM32."
+      ]
+    },
+    {
+      "period": "2018.09 – 2022.09",
+      "title": "과장 / Senior Software Developer",
+      "company": "BNF Technology",
+      "highlights": [
+        "HanPrism Insight 3.0 풀스택(C#/ASP.NET Web API + Angular).",
+        "실시간: 선형 차트(Highcharts), 미믹 시뮬레이션(SignalR), 대시보드 빌더, 알람.",
+        "삼성 에너지 관리 시스템: 10+ 대시보드(분석/리포팅).",
+        "KOEN Mobile(Java Spring): 보안/권한/모바일 API 개선.",
+        "주요 역할: 워크플로우·DB·백엔드 설계, Web API, 프론트엔드 구현, 버그 수정, 신기술 검토, 주니어 멘토링.",
+        "스택: C#, ASP.NET MVC/Web API, Angular, TypeScript, Highcharts, SignalR, DevExpress, EF, MySQL/MariaDB, Java Spring, Git/SVN."
+      ]
+    },
+    {
+      "period": "2012.11 – 2018.09",
+      "title": "Senior Developer / Senior Engineer",
+      "company": "FPT Software",
+      "highlights": [
+        "호주/싱가포르/영국 고객 프로젝트: Biddly Contests, CdmPrint, R4YL, MOE(싱가포르 교육부), MSO(영국 모기지).",
+        "요구사항·시스템 설계, Web API/WCF 백엔드, MVC/JavaScript 프론트엔드, 결제·인증·워크플로우 구현, 최적화/테스트.",
+        "스택: C#, ASP.NET MVC/Web API, WCF, Entity Framework, PetaPoco, HTML5/CSS3, jQuery, KendoUI, MVVM JS, Umbraco, SQL Server, SVN/Git."
+      ]
+    },
+    {
+      "period": "2008.03 – 2012.11",
+      "title": "Senior Developer",
+      "company": "CMC Software (OSDC)",
+      "highlights": [
+        "미국/일본 프로젝트: CRM Web API, Calphalon e-Commerce, Cooking.com, EAS(일본) 프로젝트 관리 포털.",
+        "핵심 기능: 전자상거래 결제, 인증, 워크플로우, 리포팅, 타임시트 등.",
+        "스택: C#, ASP.NET MVC/Web API, LINQ, WCF, Java Spring MVC, HTML5/CSS3/JS, DI(Ninject/Windsor/Seasar), SQL Server/MySQL, NUnit, TFS/SVN."
+      ]
+    },
+    {
+      "period": "2006.06 – 2008.02",
+      "title": "대리 / Software Developer (Windows)",
+      "company": "AVASYS Vietnam (EPSON)",
+      "highlights": [
+        "데스크톱 유틸리티 개발 및 유지보수: Printer Support/Setting, Drawing, Scanner, Zebra Printer.",
+        "스택: Visual C++ MFC, WinForms, XML/INI 구성, UI 폼 디자인, 멀티스레딩."
+      ]
+    }
+  ],
+  "certificates": [
+    "2017.08 · AWS 공인 솔루션스 아키텍트 (AWS)",
+    "2017.08 · AWS 공인 개발자 (AWS)",
+    "2017.07 · GE 플랫폼 Predix 개발자 (General Electric)",
+    "2016.07 · 프로젝트 관리 기초 (FPT Software)",
+    "2009.10 · UML 기반 시스템 분석 및 설계 (IBM)",
+    "2006.06 · 정보처리기사 (과학기술부)"
+  ],
+  "languages": [
+    "영어 · TOEIC 710 (2016.12)",
+    "한국어 · 일상 회화 가능"
+  ],
+  "about": [
+    "19+ năm kinh nghiệm phát triển ứng dụng; theo đuổi học hỏi công nghệ mới và giải quyết vấn đề thực tiễn.",
+    "Kinh nghiệm đa quốc gia (Mỹ, Úc, Singapore, Anh, Nhật, Hàn); quen thuộc văn hóa/kỹ thuật làm việc tại Hàn Quốc.",
+    "Hoạt động cộng đồng kỹ thuật: từng top 2% Stack Overflow; hiện khai thác AI (ChatGPT) để tăng tốc học tập và công việc.",
+    "F5 영주권, 사회통합프로그램 6단계 수료; sẵn sàng hợp tác lâu dài tại Hàn Quốc."
+  ]
+}
+
