@@ -16,6 +16,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "extract:portfolio": "node scripts/extract-portfolio-images.js",
+    "extract:resume": "node scripts/extract-resume.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
@@ -40,6 +42,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "adm-zip": "^0.5.16",
+    "gh-pages": "^4.0.0",
+    "pdf-parse": "^2.3.5",
+    "pdfjs-dist": "^5.4.296"
   }
 }
