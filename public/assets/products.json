@@ -9,6 +9,14 @@
       "folder": "esave"
     },
     {
+      "id": "radtag",
+      "product": "RadTag",
+      "title": "RadTag",
+      "description": "Cloud dashboards for radiation device data",
+      "tone": "green",
+      "folder": "radtag"
+    },
+    {
       "id": "erm",
       "product": "실시간 방사선 감시시스템",
       "title": "실시간 방사선 감시시스템",
@@ -18,4 +26,3 @@
     }
   ]
 }
-

@@ -35,6 +35,8 @@ function loadProductImages(subdir) {
       ctx = require.context('./document/product/hanprismweb', true, /\.(png|jpe?g|svg)$/i);
     } else if (subdir === 'erm') {
       ctx = require.context('./document/product/erm', true, /\.(png|jpe?g|svg)$/i);
+    } else if (subdir === 'radtag') {
+      ctx = require.context('./document/product/radtag', true, /\.(png|jpe?g|svg)$/i);
     } else {
       return [];
     }
