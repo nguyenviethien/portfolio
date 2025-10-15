@@ -113,6 +113,7 @@ function PDFThumbnail({ url, width = 320, height = 220, title }) {
 
 function App() {
   const [cvData, setCvData] = useState(null);
+  const [productsData, setProductsData] = useState(null);
   useEffect(() => {
     let active = true;
     const bust = (process.env.REACT_APP_BUILD || Date.now());
@@ -120,6 +121,12 @@ function App() {
       .then((r) => (r.ok ? r.json() : null))
       .then((json) => {
         if (active) setCvData(json);
+      })
+      .catch(() => {});
+    fetch(process.env.PUBLIC_URL + '/assets/products.json?v=' + bust, { cache: 'no-cache' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((json) => {
+        if (active) setProductsData(json);
       })
       .catch(() => {});
     return () => {
@@ -157,14 +164,7 @@ function App() {
 
   // Product images from folder take priority; fall back to defaults
   const productImages = loadHanprismWebImages();
-  const esaveItems = (() => {
-    const items = loadProductImages('esave');
-    return items.map((it) => ({ src: it.url, alt: it.name }));
-  })();
-  const ermItems = (() => {
-    const items = loadProductImages('erm');
-    return items.map((it) => ({ src: it.url, alt: it.name }));
-  })();
+  const folderImages = (folder) => loadProductImages(folder).map((it) => ({ src: it.url, alt: it.name }));
   const displayCaseStudies = caseStudies.map((cs) => {
     let imgs = [];
     if (cs.id === 'dashboard-suite' && productImages.dashboard.length) {
@@ -251,36 +251,25 @@ function App() {
                 <CaseCard key={caseStudy.id} caseStudy={caseStudy} />
               ))}
           </div>
-          {esaveItems.length > 0 && (
-            <div className="grid case-grid" style={{ marginTop: 24 }}>
-              <CaseCard
-                caseStudy={{
-                  id: 'esave',
-                  product: 'eSave',
-                  title: 'eSave',
-                  description: '',
-                  images: esaveItems,
-                  screens: [],
-                  tone: 'blue'
-                }}
-              />
-            </div>
-          )}
-          {ermItems.length > 0 && (
-            <div className="grid case-grid" style={{ marginTop: 24 }}>
-              <CaseCard
-                caseStudy={{
-                  id: 'erm',
-                  product: '실시간 방사선 감시시스템',
-                  title: '실시간 방사선 감시시스템',
-                  description: 'Python Flask, SessionBus, Spring Boot, MyBatis',
-                  images: ermItems,
-                  screens: [],
-                  tone: 'purple'
-                }}
-              />
-            </div>
-          )}
+          {(productsData?.rows || []).map((row) => {
+            const imgs = row.folder ? folderImages(row.folder) : [];
+            if (!imgs.length) return null;
+            return (
+              <div key={row.id} className="grid case-grid" style={{ marginTop: 24 }}>
+                <CaseCard
+                  caseStudy={{
+                    id: row.id,
+                    product: row.product,
+                    title: row.title || row.product,
+                    description: row.description || '',
+                    images: imgs,
+                    screens: row.screens || [],
+                    tone: row.tone || 'blue'
+                  }}
+                />
+              </div>
+            );
+          })}
         </section>
       </main>
 
