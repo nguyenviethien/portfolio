@@ -112,9 +112,22 @@ function PDFThumbnail({ url, width = 320, height = 220, title }) {
 }
 
 function App() {
+  const [cvData, setCvData] = useState(null);
+  useEffect(() => {
+    let active = true;
+    fetch(process.env.PUBLIC_URL + '/assets/cv.json')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((json) => {
+        if (active) setCvData(json);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, []);
 
   // Override hero with provided resume summary and contacts
-  const heroInfo = {
+  const heroDefaults = {
     name: 'Nguyen Viet Hien',
     email: 'nguyenviethien@gmail.com',
     phone: '010-8683-1183',
@@ -125,6 +138,7 @@ function App() {
       '현재 한국에서 F5 영주권을 보유하고 있으며, 사회통합프로그램 최고 단계(6단계)를 수료하여 한국어로 생활 및 업무 의사소통이 가능합니다. 풍부한 개발 경험과 국제적 역량, 한국 근무 경력을 바탕으로 귀사에 빠르게 적응하고 효과적으로 기여할 수 있다고 자신합니다.'
     ]
   };
+  const heroInfo = { ...heroDefaults, ...(cvData?.hero || {}) };
 
   // Load custom hero image
   let heroPhoto = null;
@@ -172,9 +186,9 @@ function App() {
             )}
             <div>
               <div className="hero__eyebrow">Portfolio Spotlight</div>
-              <h1 className="hero__headline">{heroInfo.name}</h1>
-              <p className="hero__subheadline">Senior Software Researcher</p>
-              <p className="hero__location">{heroInfo.address}</p>
+          <h1 className="hero__headline">{heroInfo.name}</h1>
+          <p className="hero__subheadline">{heroInfo.title || 'Senior Software Researcher'}</p>
+          <p className="hero__location">{heroInfo.address}</p>
             </div>
           </div>
           <div className="hero__summary">
@@ -194,7 +208,7 @@ function App() {
       </header>
 
       <main>
-        <ResumeSection />
+        <ResumeSection resumeData={cvData?.resume || null} />
         {/* Portfolio gallery removed */}
 
         <section className="section">
@@ -281,9 +295,13 @@ function App() {
 
 // PortfolioGallery and PDF-based thumbnails removed to avoid requiring local PDF file
 
-function ResumeSection() {
-  const [data, setData] = useState(null);
+function ResumeSection({ resumeData }) {
+  const [data, setData] = useState(resumeData || null);
   useEffect(() => {
+    if (resumeData) {
+      setData(resumeData);
+      return;
+    }
     let active = true;
     fetch(process.env.PUBLIC_URL + '/assets/resume.json')
       .then((r) => (r.ok ? r.json() : null))
@@ -294,7 +312,7 @@ function ResumeSection() {
     return () => {
       active = false;
     };
-  }, []);
+  }, [resumeData]);
   if (!data) return null;
   const { experiences = [], skills = [], education = [] } = data;
   return (

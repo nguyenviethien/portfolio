@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.6cfa69ee.css",
-    "main.js": "/Portfolio/static/js/main.3b5ebc67.js",
+    "main.js": "/Portfolio/static/js/main.bbd99b3d.js",
     "static/js/179.d262a34c.chunk.js": "/Portfolio/static/js/179.d262a34c.chunk.js",
     "static/js/453.7ed5e4c9.chunk.js": "/Portfolio/static/js/453.7ed5e4c9.chunk.js",
     "static/js/729.597eb4df.chunk.js": "/Portfolio/static/js/729.597eb4df.chunk.js",
@@ -35,13 +35,13 @@
     "static/media/Predix Certificate.JPG": "/Portfolio/static/media/Predix Certificate.3c9b3e2bd6a3270c775d.JPG",
     "index.html": "/Portfolio/index.html",
     "main.6cfa69ee.css.map": "/Portfolio/static/css/main.6cfa69ee.css.map",
-    "main.3b5ebc67.js.map": "/Portfolio/static/js/main.3b5ebc67.js.map",
+    "main.bbd99b3d.js.map": "/Portfolio/static/js/main.bbd99b3d.js.map",
     "179.d262a34c.chunk.js.map": "/Portfolio/static/js/179.d262a34c.chunk.js.map",
     "453.7ed5e4c9.chunk.js.map": "/Portfolio/static/js/453.7ed5e4c9.chunk.js.map",
     "729.597eb4df.chunk.js.map": "/Portfolio/static/js/729.597eb4df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6cfa69ee.css",
-    "static/js/main.3b5ebc67.js"
+    "static/js/main.bbd99b3d.js"
   ]
 }
