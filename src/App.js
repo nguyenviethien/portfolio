@@ -305,20 +305,15 @@ function App() {
         <section className="section">
           <h2>{t('productCaseStudies')}</h2>
           <div className="grid case-grid">
-            {displayCaseStudies
-              .filter((cs) => cs.product?.toLowerCase().includes('hanprism'))
-              .slice(0, 1)
-              .map((caseStudy) => (
-                <CaseCard key={caseStudy.id} caseStudy={caseStudy} />
-              ))}
-          </div>
-          {(productsData?.rows || []).map((row) => {
-            const imgs = row.folder ? folderImages(row.folder) : [];
-            if (!imgs.length) return null;
-            return (
-              <div key={row.id} className="grid case-grid" style={{ marginTop: 24 }}>
-                <CaseCard
-                  caseStudy={{
+            {[
+              ...displayCaseStudies
+                .filter((cs) => cs.product?.toLowerCase().includes('hanprism'))
+                .slice(0, 1),
+              ...((productsData?.rows || [])
+                .map((row) => {
+                  const imgs = row.folder ? folderImages(row.folder) : [];
+                  if (!imgs.length) return null;
+                  return {
                     id: row.id,
                     product: row.product,
                     title: row.title || row.product,
@@ -326,11 +321,13 @@ function App() {
                     images: imgs,
                     screens: row.screens || [],
                     tone: row.tone || 'blue'
-                  }}
-                />
-              </div>
-            );
-          })}
+                  };
+                })
+                .filter(Boolean))
+            ].map((caseStudy) => (
+              <CaseCard key={caseStudy.id} caseStudy={caseStudy} />
+            ))}
+          </div>
         </section>
 
         {/* Community section moved to the end */}
@@ -563,6 +560,7 @@ function SkillColumn({ title, items }) {
 
 function CaseCard({ caseStudy }) {
   const [idx, setIdx] = useState(0);
+  const [zoom, setZoom] = useState(false);
   const total = caseStudy.images?.length || 0;
   const safeIdx = ((idx % total) + total) % total;
   const go = (d) => setIdx((v) => v + d);
@@ -581,7 +579,7 @@ function CaseCard({ caseStudy }) {
         <div className="case-card__preview">
           <div className="slideshow">
             <div className="slideshow__frame">
-              <img src={current.src} alt={current.alt} loading="lazy" />
+              <img src={current.src} alt={current.alt} loading="lazy" onClick={() => setZoom(true)} />
             </div>
             <div className="slideshow__nav">
               <button className="slideshow__btn" aria-label="Previous" onClick={() => go(-1)}>
@@ -605,6 +603,11 @@ function CaseCard({ caseStudy }) {
         </div>
       )}
       {/* Removed screen chips under the card as requested */}
+      {zoom && (
+        <div className="lightbox" onClick={() => setZoom(false)}>
+          <img src={current?.src} alt={current?.alt || ''} />
+        </div>
+      )}
     </article>
   );
 }
