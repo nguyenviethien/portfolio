@@ -385,6 +385,15 @@
   object-fit: contain;
 }
 
+.lightbox__caption {
+  margin-top: 12px;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  max-width: 90vw;
+}
+
 .lightbox__btn {
   position: absolute;
   top: 50%;

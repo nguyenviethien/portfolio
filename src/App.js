@@ -642,6 +642,11 @@ function CaseCard({ caseStudy }) {
             alt={current?.alt || ''}
             onClick={(e) => e.stopPropagation()}
           />
+          {caption && (
+            <div className="lightbox__caption" onClick={(e) => e.stopPropagation()}>
+              {caption}
+            </div>
+          )}
           <button
             className="slideshow__btn lightbox__btn lightbox__btn--next"
             aria-label="Next"
