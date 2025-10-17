@@ -561,6 +561,7 @@ function SkillColumn({ title, items }) {
 function CaseCard({ caseStudy }) {
   const [idx, setIdx] = useState(0);
   const [zoom, setZoom] = useState(false);
+  const overlayRef = useRef(null);
   const total = caseStudy.images?.length || 0;
   const safeIdx = ((idx % total) + total) % total;
   const go = (d) => setIdx((v) => v + d);
@@ -568,6 +569,28 @@ function CaseCard({ caseStudy }) {
   const caption = current
     ? current.alt || (typeof current.src === 'string' ? current.src.split('/').pop().replace(/\.[^.]+$/, '') : '')
     : '';
+  useEffect(() => {
+    if (!zoom) return;
+    function onKey(e) {
+      if (e.key === 'Escape') setZoom(false);
+      else if (e.key === 'ArrowLeft') setIdx((v) => v - 1);
+      else if (e.key === 'ArrowRight') setIdx((v) => v + 1);
+    }
+    window.addEventListener('keydown', onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const el = overlayRef.current;
+    if (el && el.requestFullscreen) {
+      try { el.requestFullscreen(); } catch (e) {}
+    }
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      document.body.style.overflow = prevOverflow;
+      if (document.fullscreenElement && document.exitFullscreen) {
+        try { document.exitFullscreen(); } catch (e) {}
+      }
+    };
+  }, [zoom]);
   return (
     <article className={'case-card case-card--' + caseStudy.tone}>
       <header>
@@ -604,8 +627,27 @@ function CaseCard({ caseStudy }) {
       )}
       {/* Removed screen chips under the card as requested */}
       {zoom && (
-        <div className="lightbox" onClick={() => setZoom(false)}>
-          <img src={current?.src} alt={current?.alt || ''} onClick={(e) => e.stopPropagation()} />
+        <div className="lightbox" ref={overlayRef} onClick={() => setZoom(false)}>
+          <button
+            className="slideshow__btn lightbox__btn lightbox__btn--prev"
+            aria-label="Previous"
+            onClick={(e) => { e.stopPropagation(); setIdx((v) => v - 1); }}
+          >&lt;</button>
+          <img
+            src={current?.src}
+            alt={current?.alt || ''}
+            onClick={(e) => e.stopPropagation()}
+          />
+          <button
+            className="slideshow__btn lightbox__btn lightbox__btn--next"
+            aria-label="Next"
+            onClick={(e) => { e.stopPropagation(); setIdx((v) => v + 1); }}
+          >&gt;</button>
+          <button
+            className="lightbox__close"
+            aria-label="Close"
+            onClick={(e) => { e.stopPropagation(); setZoom(false); }}
+          >×</button>
         </div>
       )}
     </article>

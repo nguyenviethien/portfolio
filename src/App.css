@@ -385,6 +385,34 @@
   object-fit: contain;
 }
 
+.lightbox__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  line-height: 1;
+}
+.lightbox__btn--prev { left: 20px; }
+.lightbox__btn--next { right: 20px; }
+
+.lightbox__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  appearance: none;
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.2);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
 .slideshow__nav {
   position: absolute;
   inset: 0;
