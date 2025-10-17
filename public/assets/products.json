@@ -18,11 +18,27 @@
     },
     {
       "id": "erm",
-      "product": "실시간 방사선 감시시스템",
-      "title": "실시간 방사선 감시시스템",
-      "description": "Python Flask, SessionBus, Spring Boot, MyBatis",
+      "product": "�<\u000f�<o��, ��c�,��,� ��?�<o�<o�S\u000f�.o",
+      "title": "�<\u000f�<o��, ��c�,��,� ��?�<o�<o�S\u000f�.o",
+      "description": "Python/Flask, SessionBus, Spring Boot, MyBatis",
       "tone": "purple",
       "folder": "erm"
+    },
+    {
+      "id": "peakgo",
+      "product": "PeakGo",
+      "title": "PeakGo",
+      "description": "Bluetooth-connected radiation detector app",
+      "tone": "blue",
+      "folder": "peakgo"
+    },
+    {
+      "id": "peakid",
+      "product": "PeakID",
+      "title": "PeakID",
+      "description": "Desktop data analysis for spectra",
+      "tone": "green",
+      "folder": "peakid"
     }
   ]
 }

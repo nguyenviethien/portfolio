@@ -37,6 +37,10 @@ function loadProductImages(subdir) {
       ctx = require.context('./document/product/erm', true, /\.(png|jpe?g|svg)$/i);
     } else if (subdir === 'radtag') {
       ctx = require.context('./document/product/radtag', true, /\.(png|jpe?g|svg)$/i);
+    } else if (subdir === 'peakgo') {
+      ctx = require.context('./document/product/peakgo', true, /\.(png|jpe?g|svg)$/i);
+    } else if (subdir === 'peakid') {
+      ctx = require.context('./document/product/peakid', true, /\.(png|jpe?g|svg)$/i);
     } else {
       return [];
     }
@@ -114,6 +118,54 @@ function PDFThumbnail({ url, width = 320, height = 220, title }) {
 }
 
 function App() {
+  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'ko');
+  const [i18nMap, setI18nMap] = useState(null);
+  const fallbackI18n = {
+    en: {
+      portfolioSpotlight: 'Portfolio Spotlight',
+      certificates: 'Certificates',
+      productCaseStudies: 'Product Case Studies',
+      resume: 'Resume',
+      email: 'Email',
+      phone: 'Phone',
+      address: 'Address',
+      view: 'View',
+      community: 'Community',
+      profile: 'Profile',
+      viewOnSO: 'View on Stack Overflow',
+    },
+    ko: {
+      portfolioSpotlight: '포트폴리오 하이라이트',
+      certificates: '자격증',
+      productCaseStudies: '제품 사례 연구',
+      resume: '이력서',
+      email: '이메일',
+      phone: '전화',
+      address: '주소',
+      view: '보기',
+      community: '커뮤니티',
+      profile: '프로필',
+      viewOnSO: '스택 오버플로우에서 보기',
+    },
+  };
+  const t = (key) => (i18nMap && i18nMap[key]) || (fallbackI18n[lang] && fallbackI18n[lang][key]) || fallbackI18n.en[key] || key;
+
+  useEffect(() => {
+    localStorage.setItem('lang', lang);
+    const bust = process.env.REACT_APP_BUILD || Date.now();
+    let cancelled = false;
+    fetch(process.env.PUBLIC_URL + `/assets/i18n/${lang}.json?v=` + bust, { cache: 'no-cache' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((json) => {
+        if (!cancelled) setI18nMap(json);
+      })
+      .catch(() => {
+        if (!cancelled) setI18nMap(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [lang]);
   const [cvData, setCvData] = useState(null);
   const [productsData, setProductsData] = useState(null);
   useEffect(() => {
@@ -159,9 +211,9 @@ function App() {
   }
 
   const contactItems = [
-    { label: 'Email', value: heroInfo.email, href: 'mailto:' + heroInfo.email },
-    { label: 'Phone', value: heroInfo.phone, href: 'tel:' + heroInfo.phone.replace(/[^0-9+]/g, '') },
-    { label: 'Address', value: heroInfo.address, href: 'https://maps.google.com/?q=' + encodeURIComponent(heroInfo.address) }
+    { label: t('email'), value: heroInfo.email, href: 'mailto:' + heroInfo.email },
+    { label: t('phone'), value: heroInfo.phone, href: 'tel:' + heroInfo.phone.replace(/[^0-9+]/g, '') },
+    { label: t('address'), value: heroInfo.address, href: 'https://maps.google.com/?q=' + encodeURIComponent(heroInfo.address) }
   ];
 
   // Product images from folder take priority; fall back to defaults
@@ -182,13 +234,20 @@ function App() {
   return (
     <div className="app">
       <header className="hero">
+        <div className="lang-switch">
+          <label htmlFor="lang" className="sr-only">Language</label>
+          <select id="lang" className="lang-select" value={lang} onChange={(e) => setLang(e.target.value)}>
+            <option value="en">English</option>
+            <option value="ko">한국어</option>
+          </select>
+        </div>
         <div className="hero__content">
           <div className="hero__top">
             {heroPhoto && (
               <img className="hero__photo" src={heroPhoto} alt={heroInfo.name} />
             )}
             <div>
-              <div className="hero__eyebrow">Portfolio Spotlight</div>
+              <div className="hero__eyebrow">{t('portfolioSpotlight')}</div>
           <h1 className="hero__headline">{heroInfo.name}</h1>
           <p className="hero__subheadline">{heroInfo.title || 'Senior Software Researcher'}</p>
           <p className="hero__location">{heroInfo.address}</p>
@@ -211,11 +270,11 @@ function App() {
       </header>
 
       <main>
-        <ResumeSection resumeData={cvData?.resume || null} />
+        <ResumeSection t={t} resumeData={cvData?.resume || null} />
         {/* Portfolio gallery removed */}
 
         <section className="section">
-          <h2>Certificates</h2>
+          <h2>{t('certificates')}</h2>
           <div className="grid cert-grid">
             {loadCertificates().map((item) => (
               <article key={item.url} className="cert-card">
@@ -235,7 +294,7 @@ function App() {
                 )}
                 <div className="cert-actions">
                   <a className="pill" href={item.url} target="_blank" rel="noreferrer">
-                    <span className="pill__value">View</span>
+                    <span className="pill__value">{t('view')}</span>
                   </a>
                 </div>
               </article>
@@ -244,7 +303,7 @@ function App() {
         </section>
 
         <section className="section">
-          <h2>Product Case Studies</h2>
+          <h2>{t('productCaseStudies')}</h2>
           <div className="grid case-grid">
             {displayCaseStudies
               .filter((cs) => cs.product?.toLowerCase().includes('hanprism'))
@@ -273,13 +332,55 @@ function App() {
             );
           })}
         </section>
+
+        {/* Community section moved to the end */}
+        {!!profile.stackoverflowId && (
+          <StackOverflowSection t={t} userId={profile.stackoverflowId} />
+        )}
       </main>
 
       <footer className="footer">
-        <p>Available for collaborations on complex analytics platforms.</p>
-        <a className="footer__cta" href={profile.contact.portfolio} target="_blank" rel="noreferrer">
-          See full portfolio
-        </a>
+        <nav className="footer-socials">
+          {[
+            {
+              key: 'stackoverflow',
+              href: profile.contact.stackoverflow || (profile.stackoverflowId ? `https://stackoverflow.com/users/${profile.stackoverflowId}` : null),
+              label: 'Stack Overflow',
+              icon: (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.5 21v-6h2v8h-16v-8h2v6h12zM8.6 13.6l.4-1.9 8.8 1.9-.4 2-8.8-2zM10 9.3l.8-1.8 8.1 3.7-.8 1.8L10 9.3zm2.6-4.3l1.3-1.5 6.7 5.8-1.3 1.5-6.7-5.8zM8 17h8v2H8v-2zm.2-3.8l9.2.9-.2 2-9.2-1 .2-1.9z"/>
+                </svg>
+              )
+            },
+            {
+              key: 'linkedin',
+              href: profile.contact.linkedin,
+              label: 'LinkedIn',
+              icon: (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM10 9h3.8v1.64h.05c.53-.95 1.84-1.95 3.79-1.95 4.05 0 4.8 2.66 4.8 6.12V21h-4v-5.33c0-1.27-.02-2.9-1.77-2.9-1.78 0-2.05 1.38-2.05 2.8V21h-4z"/>
+                </svg>
+              )
+            },
+            {
+              key: 'github',
+              href: profile.contact.github,
+              label: 'Github',
+              icon: (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.77.6-3.36-1.17-3.36-1.17-.46-1.17-1.12-1.48-1.12-1.48-.92-.63.07-.62.07-.62 1.02.07 1.55 1.05 1.55 1.05.9 1.54 2.36 1.09 2.94.83.09-.66.35-1.1.63-1.35-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.7.12 2.5.35 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/>
+                </svg>
+              )
+            }
+          ]
+            .filter((s) => !!s.href)
+            .map((s) => (
+              <a key={s.key} className="social" href={s.href} target="_blank" rel="noreferrer">
+                <span className="social__icon">{s.icon}</span>
+                <span className="social__label">{s.label}</span>
+              </a>
+            ))}
+        </nav>
       </footer>
     </div>
   );
@@ -287,7 +388,7 @@ function App() {
 
 // PortfolioGallery and PDF-based thumbnails removed to avoid requiring local PDF file
 
-function ResumeSection({ resumeData }) {
+function ResumeSection({ t, resumeData }) {
   const [data, setData] = useState(resumeData || null);
   useEffect(() => {
     if (resumeData) {
@@ -310,7 +411,7 @@ function ResumeSection({ resumeData }) {
   const { experiences = [], skills = [], education = [] } = data;
   return (
     <section className="section">
-      <h2>Resume</h2>
+      <h2>{t ? t('resume') : 'Resume'}</h2>
       {/* Contact block under Resume removed as requested */}
       {education?.length > 0 && (
         <div className="skills-column" style={{ marginBottom: 24 }}>
@@ -374,7 +475,7 @@ function ResumeSection({ resumeData }) {
           return out;
         };
         const groupSkills = (list) => {
-          const res = { desktop: [], web: [], embedded: [] };
+          const res = { desktop: [], web: [], embedded: [], tools: [] };
           list.forEach((item) => {
             const s = String(item).toLowerCase();
             if (
@@ -387,6 +488,12 @@ function ResumeSection({ resumeData }) {
               s.includes('qt')
             ) {
               res.embedded.push(item);
+            } else if (
+              s === 'tomcat' ||
+              s === 'git' ||
+              s === 'svn'
+            ) {
+              res.tools.push(item);
             } else if (
               s.includes('asp.net') ||
               s.includes('web api') ||
@@ -402,7 +509,6 @@ function ResumeSection({ resumeData }) {
               s.includes('mysql') ||
               s.includes('mariadb') ||
               s.includes('sql server') ||
-              s.includes('tomcat') ||
               s.includes('flask') ||
               s.includes('python') ||
               s.includes('highcharts') ||
@@ -427,12 +533,13 @@ function ResumeSection({ resumeData }) {
           return res;
         };
         const normalized = normalizeSkills(skills);
-        const { desktop, web, embedded } = groupSkills(normalized);
+        const { desktop, web, embedded, tools } = groupSkills(normalized);
         return (
           <div className="grid skills-grid" style={{ marginTop: 24 }}>
             <SkillColumn title="Desktop" items={desktop} />
             <SkillColumn title="Web" items={web} />
             <SkillColumn title="Embedded" items={embedded} />
+            <SkillColumn title="Tools" items={tools} />
           </div>
         );
       })()}
@@ -503,3 +610,41 @@ function CaseCard({ caseStudy }) {
 }
 
 export default App;
+
+// --- Stack Overflow integration ---
+function StackOverflowSection({ userId, t }) {
+  // Show only a local image, auto-detecting common names or any image in
+  // src/document (and its community/ subfolder) so you can drop a file in.
+  let img = null;
+  try {
+    const ctx = require.context('./document', true, /\.(png|jpe?g|svg)$/i);
+    const keys = ctx.keys();
+    const prefer = keys.find((k) => /(^\.\/community\/|community|stack\s*-?\s*overflow|so[-_]?profile)/i.test(k));
+    const key = prefer || keys[0];
+    if (key) img = ctx(key);
+  } catch (e) {
+    img = null;
+  }
+
+  if (!img) return null; // hide section if image not provided yet
+
+  return (
+    <section className="section">
+      <div className="section-head">
+        <h2>{t ? t('community') : 'Community'}</h2>
+        <a
+          className="pill"
+          href={`https://stackoverflow.com/users/${userId}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="pill__label">{t ? t('profile') : 'Profile'}</span>
+          <span className="pill__value">{t ? t('viewOnSO') : 'View on Stack Overflow'}</span>
+        </a>
+      </div>
+      <figure className="community-figure">
+        <img className="community-img" src={img} alt="Community" loading="lazy" />
+      </figure>
+    </section>
+  );
+}

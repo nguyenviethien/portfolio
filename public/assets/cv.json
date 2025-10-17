@@ -17,10 +17,10 @@
       "2001.09 – 2006.05 · 하노이 공과대학교 정보기술학과 · GPA 75/100"
     ],
     "skills": [
-      ".NET", "C#", "WPF", "MFC", "C++", "Qt", "ASP.NET MVC", "ASP.NET Web API",
-      "Java", "Spring Boot", "Spring MVC", "MyBatis", "TypeScript", "Angular", "React",
-      "JavaScript", "jQuery", "Highcharts", "SignalR", "DevExpress", "Entity Framework",
-      "MySQL", "MariaDB", "SQL Server", "SQLite", "Python", "Flask", "HTML5", "CSS3",
+      ".NET", "C#", "WPF", "MFC", "C++", "Qt", "ASP.NET MVC /Web API",
+      "Java", "Spring Boot", "Spring MVC", "TypeScript", "Angular", "React",
+      "JavaScript", "jQuery", "Highcharts", "SignalR", "DevExpress", "Entity Framework/JPA/MyBatis",
+      "MySQL", "MariaDB", "SQL Server", "SQLite", "Python/Flask", "HTML5", "CSS3",
       "Tomcat", "Git", "SVN", "Socket", "Serial", "USB HID", "Embedded Linux (Buildroot)"
     ],
     "experiences": [
@@ -80,4 +80,3 @@
     ]
   }
 }
-

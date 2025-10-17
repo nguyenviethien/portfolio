@@ -2,6 +2,9 @@ export const profile = {
   name: 'Your Name',
   title: 'Senior Product Designer',
   location: 'Seoul, South Korea',
+  // Stack Overflow user id for portfolio integration
+  // Example: 4964569
+  stackoverflowId: 4964569,
   summary: [
     'Designing data-dense industrial platforms that pair mission-critical insight with intuitive workflows.',
     'Led the end-to-end UX for HanPrism Insight 3.1, delivering cohesive dashboard, alarm, and mimic experiences.',
@@ -11,7 +14,9 @@ export const profile = {
     email: 'you@example.com',
     phone: '+82-10-1234-5678',
     portfolio: 'https://your-portfolio.com',
-    linkedin: 'https://www.linkedin.com/in/yourprofile'
+    linkedin: 'https://www.linkedin.com/in/nguyenviethien',
+    stackoverflow: 'https://stackoverflow.com/users/4964569',
+    github: 'https://github.com/nguyenviethien'
   },
   heroImage: {
     src: process.env.PUBLIC_URL + '/assets/hanprism-hero.svg',
