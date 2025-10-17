@@ -605,7 +605,7 @@ function CaseCard({ caseStudy }) {
       {/* Removed screen chips under the card as requested */}
       {zoom && (
         <div className="lightbox" onClick={() => setZoom(false)}>
-          <img src={current?.src} alt={current?.alt || ''} />
+          <img src={current?.src} alt={current?.alt || ''} onClick={(e) => e.stopPropagation()} />
         </div>
       )}
     </article>
@@ -651,3 +651,4 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
