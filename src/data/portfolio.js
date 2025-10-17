@@ -24,51 +24,7 @@ export const profile = {
   }
 };
 
-export const skills = {
-  core: [
-    'Product Strategy',
-    'UX Research',
-    'Information Architecture',
-    'Design Systems',
-    'Interaction Design',
-    'Prototyping'
-  ],
-  tools: [
-    'Figma',
-    'Adobe XD',
-    'Illustrator',
-    'Miro',
-    'Notion'
-  ],
-  methods: [
-    'User Journey Mapping',
-    'Data Visualization',
-    'Usability Testing',
-    'Stakeholder Workshops'
-  ]
-};
-
-export const experiences = [
-  {
-    period: '2022 - Present',
-    title: 'Lead Product Designer',
-    company: 'HanPrism Insight 3.1',
-    highlights: [
-      'Redesigned the dashboard ecosystem across list, view, and edit flows to accelerate situational awareness for nuclear operators.',
-      'Introduced a harmonized visual language for monitoring widgets, boosting time-to-insight across diverse teams.',
-      'Embedded alert-range controls that pair advanced safety thresholds with accessible configuration UI.'
-    ]
-  },
-  {
-    period: '2018 - 2022',
-    title: 'Senior UX Designer',
-    company: 'Samsung Energy Management System',
-    highlights: [
-      'Crafted a desktop application for enterprise energy optimization, focusing on command clarity and data trust.',
-      'Orchestrated design reviews with engineers and analysts to iterate on complex alarm and tagging workflows.'
-    ]
-  }
-];
+// Removed unused exports: skills, experiences
 
 export const caseStudies = [
   {
