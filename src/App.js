@@ -632,7 +632,11 @@ function CaseCard({ caseStudy }) {
             className="slideshow__btn lightbox__btn lightbox__btn--prev"
             aria-label="Previous"
             onClick={(e) => { e.stopPropagation(); setIdx((v) => v - 1); }}
-          >&lt;</button>
+          >
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 6L9 12L15 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
           <img
             src={current?.src}
             alt={current?.alt || ''}
@@ -642,7 +646,11 @@ function CaseCard({ caseStudy }) {
             className="slideshow__btn lightbox__btn lightbox__btn--next"
             aria-label="Next"
             onClick={(e) => { e.stopPropagation(); setIdx((v) => v + 1); }}
-          >&gt;</button>
+          >
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 6L15 12L9 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
           <button
             className="lightbox__close"
             aria-label="Close"
