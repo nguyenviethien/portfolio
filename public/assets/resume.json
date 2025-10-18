@@ -1,19 +1,19 @@
-{
+﻿{
     "name":  "Nguyen Viet Hien",
     "contact":  {
                     "email":  "nguyenviethien@gmail.com",
                     "phone":  "010-8683-1183",
-                    "address":  "대전 유성구 송강동",
+                    "address":  "ëŒ€ì „ ìœ ì„±êµ¬ ì†¡ê°•ë™",
                     "linkedin":  "",
                     "portfolio":  ""
                 },
     "summary":  [
-                    "Senior Software Developer với 19+ năm kinh nghiệm (Desktop, Embedded, Web).",
-                    "Hiện làm tại (주) 뉴케어 – phát triển phần mềm giao tiếp máy đo phóng xạ, desktop và web.",
-                    "Thành thạo C#/.NET, WPF, MFC, C++/Qt; Web với ASP.NET MVC/Web API, React; Python/Flask; DB SQL/SQLite.",
-                    "Kinh nghiệm giao tiếp thiết bị: USB/WiFi/HID, socket/serial, đa luồng, đồng bộ thiết bị-PC.",
-                    "Quốc tế: từng làm với khách hàng Mỹ, Úc, Singapore, Anh, Nhật; làm việc tại Hàn Quốc ~7 năm.",
-                    "Tiếng Anh TOEIC 710; tiếng Hàn giao tiếp hằng ngày; F5 영주권, 사회통합프로그램 6단계."
+                    "Senior Software Developer vá»›i 19+ nÄƒm kinh nghiá»‡m (Desktop, Embedded, Web).",
+                    "Hiá»‡n lÃ m táº¡i (ì£¼) ë‰´ì¼€ì–´ â€“ phÃ¡t triá»ƒn pháº§n má»m giao tiáº¿p mÃ¡y Ä‘o phÃ³ng xáº¡, desktop vÃ  web.",
+                    "ThÃ nh tháº¡o C#/.NET, WPF, MFC, C++/Qt; Web vá»›i ASP.NET MVC/Web API, React; Python/Flask; DB SQL/SQLite.",
+                    "Kinh nghiá»‡m giao tiáº¿p thiáº¿t bá»‹: USB/WiFi/HID, socket/serial, Ä‘a luá»“ng, Ä‘á»“ng bá»™ thiáº¿t bá»‹-PC.",
+                    "Quá»‘c táº¿: tá»«ng lÃ m vá»›i khÃ¡ch hÃ ng Má»¹, Ãšc, Singapore, Anh, Nháº­t; lÃ m viá»‡c táº¡i HÃ n Quá»‘c ~7 nÄƒm.",
+                    "Tiáº¿ng Anh TOEIC 710; tiáº¿ng HÃ n giao tiáº¿p háº±ng ngÃ y; F5 ì˜ì£¼ê¶Œ, ì‚¬íšŒí†µí•©í”„ë¡œê·¸ëž¨ 6ë‹¨ê³„."
                 ],
     "skills":  [
                    ".NET",
@@ -56,12 +56,12 @@
                    "STM32Cube"
                ],
     "education":  [
-                      "2012.09 – 2014.06 · 외국무역대학교 (석사과정) 경영학과 · GPA 84/100",
-                      "2001.09 – 2006.05 · 하노이 공과대학교 정보기술학과 · GPA 75/100"
+                      "2012.09 â€“ 2014.06 Â· ì™¸êµ­ë¬´ì—­ëŒ€í•™êµ (ì„ì‚¬ê³¼ì •) ê²½ì˜í•™ê³¼ Â· GPA 84/100",
+                      "2001.09 â€“ 2006.05 Â· í•˜ë…¸ì´ ê³µê³¼ëŒ€í•™êµ ì •ë³´ê¸°ìˆ í•™ê³¼ Â· GPA 75/100"
                   ],
     "experiences":  [
                         {
-                            "period":  "2022.09 – 재직중",
+                            "period":  "2022.09 â€“ ìž¬ì§ì¤‘",
                             "title":  "Senior Software Developer (Desktop, Embedded, Web Applications)",
                             "company":  "(?) ???",
                             "highlights":  [
@@ -75,7 +75,7 @@
                                                "???? ??????",
                                                "??? ?? ??? ??? ???? ???? ?????? ?? ? ??.",
                                                "USB/WiFi ??, ??? ???? ???, STM32 ?? CSV/PDF ??? ?? ?? ??.",
-                                               "USB HID? ?? ??�???? ? ?? ?? ???? ??.",
+                                               "USB HID? ?? ??–???? ? ?? ?? ???? ??.",
                                                "??? ???? ??? ??? ?? Buildroot ??.",
                                                "?? ??: Linux Buildroot, Qt, C++, STM32, USB HID, Socket, ??? ?? ??.",
                                                "? ??????",
@@ -86,64 +86,64 @@
                                            ]
                         },
                         {
-                            "period":  "2018.09 – 2022.09",
-                            "title":  "과장 / Senior Software Developer",
+                            "period":  "2018.09 â€“ 2022.09",
+                            "title":  "ê³¼ìž¥ / Senior Software Developer",
                             "company":  "BNF Technology",
                             "highlights":  [
-                                               "HanPrism Insight 3.0 풀스택(C#/ASP.NET Web API + Angular).",
-                                               "실시간: 선형 차트(Highcharts), 미믹 시뮬레이션(SignalR), 대시보드 빌더, 알람.",
-                                               "삼성 에너지 관리 시스템: 10+ 대시보드(분석/리포팅).",
-                                               "KOEN Mobile(Java Spring): 보안/권한/모바일 API 개선.",
-                                               "주요 역할: 워크플로우·DB·백엔드 설계, Web API, 프론트엔드 구현, 버그 수정, 신기술 검토, 주니어 멘토링.",
-                                               "스택: C#, ASP.NET MVC/Web API, Angular, TypeScript, Highcharts, SignalR, DevExpress, EF, MySQL/MariaDB, Java Spring, Git/SVN."
+                                               "HanPrism Insight 3.0 í’€ìŠ¤íƒ(C#/ASP.NET Web API + Angular).",
+                                               "ì‹¤ì‹œê°„: ì„ í˜• ì°¨íŠ¸(Highcharts), ë¯¸ë¯¹ ì‹œë®¬ë ˆì´ì…˜(SignalR), ëŒ€ì‹œë³´ë“œ ë¹Œë”, ì•ŒëžŒ.",
+                                               "ì‚¼ì„± ì—ë„ˆì§€ ê´€ë¦¬ ì‹œìŠ¤í…œ: 10+ ëŒ€ì‹œë³´ë“œ(ë¶„ì„/ë¦¬í¬íŒ…).",
+                                               "KOEN Mobile(Java Spring): ë³´ì•ˆ/ê¶Œí•œ/ëª¨ë°”ì¼ API ê°œì„ .",
+                                               "ì£¼ìš” ì—­í• : ì›Œí¬í”Œë¡œìš°Â·DBÂ·ë°±ì—”ë“œ ì„¤ê³„, Web API, í”„ë¡ íŠ¸ì—”ë“œ êµ¬í˜„, ë²„ê·¸ ìˆ˜ì •, ì‹ ê¸°ìˆ  ê²€í† , ì£¼ë‹ˆì–´ ë©˜í† ë§.",
+                                               "ìŠ¤íƒ: C#, ASP.NET MVC/Web API, Angular, TypeScript, Highcharts, SignalR, DevExpress, EF, MySQL/MariaDB, Java Spring, Git/SVN."
                                            ]
                         },
                         {
-                            "period":  "2012.11 – 2018.09",
+                            "period":  "2012.11 â€“ 2018.09",
                             "title":  "Senior Developer / Senior Engineer",
                             "company":  "FPT Software",
                             "highlights":  [
-                                               "호주/싱가포르/영국 고객 프로젝트: Biddly Contests, CdmPrint, R4YL, MOE(싱가포르 교육부), MSO(영국 모기지).",
-                                               "요구사항·시스템 설계, Web API/WCF 백엔드, MVC/JavaScript 프론트엔드, 결제·인증·워크플로우 구현, 최적화/테스트.",
-                                               "스택: C#, ASP.NET MVC/Web API, WCF, Entity Framework, PetaPoco, HTML5/CSS3, jQuery, KendoUI, MVVM JS, Umbraco, SQL Server, SVN/Git."
+                                               "í˜¸ì£¼/ì‹±ê°€í¬ë¥´/ì˜êµ­ ê³ ê° í”„ë¡œì íŠ¸: Biddly Contests, CdmPrint, R4YL, MOE(ì‹±ê°€í¬ë¥´ êµìœ¡ë¶€), MSO(ì˜êµ­ ëª¨ê¸°ì§€).",
+                                               "ìš”êµ¬ì‚¬í•­Â·ì‹œìŠ¤í…œ ì„¤ê³„, Web API/WCF ë°±ì—”ë“œ, MVC/JavaScript í”„ë¡ íŠ¸ì—”ë“œ, ê²°ì œÂ·ì¸ì¦Â·ì›Œí¬í”Œë¡œìš° êµ¬í˜„, ìµœì í™”/í…ŒìŠ¤íŠ¸.",
+                                               "ìŠ¤íƒ: C#, ASP.NET MVC/Web API, WCF, Entity Framework, PetaPoco, HTML5/CSS3, jQuery, KendoUI, MVVM JS, Umbraco, SQL Server, SVN/Git."
                                            ]
                         },
                         {
-                            "period":  "2008.03 – 2012.11",
+                            "period":  "2008.03 â€“ 2012.11",
                             "title":  "Senior Developer",
                             "company":  "CMC Software (OSDC)",
                             "highlights":  [
-                                               "미국/일본 프로젝트: CRM Web API, Calphalon e-Commerce, Cooking.com, EAS(일본) 프로젝트 관리 포털.",
-                                               "핵심 기능: 전자상거래 결제, 인증, 워크플로우, 리포팅, 타임시트 등.",
-                                               "스택: C#, ASP.NET MVC/Web API, LINQ, WCF, Java Spring MVC, HTML5/CSS3/JS, DI(Ninject/Windsor/Seasar), SQL Server/MySQL, NUnit, TFS/SVN."
+                                               "ë¯¸êµ­/ì¼ë³¸ í”„ë¡œì íŠ¸: CRM Web API, Calphalon e-Commerce, Cooking.com, EAS(ì¼ë³¸) í”„ë¡œì íŠ¸ ê´€ë¦¬ í¬í„¸.",
+                                               "í•µì‹¬ ê¸°ëŠ¥: ì „ìžìƒê±°ëž˜ ê²°ì œ, ì¸ì¦, ì›Œí¬í”Œë¡œìš°, ë¦¬í¬íŒ…, íƒ€ìž„ì‹œíŠ¸ ë“±.",
+                                               "ìŠ¤íƒ: C#, ASP.NET MVC/Web API, LINQ, WCF, Java Spring MVC, HTML5/CSS3/JS, DI(Ninject/Windsor/Seasar), SQL Server/MySQL, NUnit, TFS/SVN."
                                            ]
                         },
                         {
-                            "period":  "2006.06 – 2008.02",
-                            "title":  "대리 / Software Developer (Windows)",
+                            "period":  "2006.06 â€“ 2008.02",
+                            "title":  "ëŒ€ë¦¬ / Software Developer (Windows)",
                             "company":  "AVASYS Vietnam (EPSON)",
                             "highlights":  [
-                                               "데스크톱 유틸리티 개발 및 유지보수: Printer Support/Setting, Drawing, Scanner, Zebra Printer.",
-                                               "스택: Visual C++ MFC, WinForms, XML/INI 구성, UI 폼 디자인, 멀티스레딩."
+                                               "ë°ìŠ¤í¬í†± ìœ í‹¸ë¦¬í‹° ê°œë°œ ë° ìœ ì§€ë³´ìˆ˜: Printer Support/Setting, Drawing, Scanner, Zebra Printer.",
+                                               "ìŠ¤íƒ: Visual C++ MFC, WinForms, XML/INI êµ¬ì„±, UI í¼ ë””ìžì¸, ë©€í‹°ìŠ¤ë ˆë”©."
                                            ]
                         }
                     ],
     "certificates":  [
-                         "2017.08 · AWS 공인 솔루션스 아키텍트 (AWS)",
-                         "2017.08 · AWS 공인 개발자 (AWS)",
-                         "2017.07 · GE 플랫폼 Predix 개발자 (General Electric)",
-                         "2016.07 · 프로젝트 관리 기초 (FPT Software)",
-                         "2009.10 · UML 기반 시스템 분석 및 설계 (IBM)",
-                         "2006.06 · 정보처리기사 (과학기술부)"
+                         "2017.08 Â· AWS ê³µì¸ ì†”ë£¨ì…˜ìŠ¤ ì•„í‚¤í…íŠ¸ (AWS)",
+                         "2017.08 Â· AWS ê³µì¸ ê°œë°œìž (AWS)",
+                         "2017.07 Â· GE í”Œëž«í¼ Predix ê°œë°œìž (General Electric)",
+                         "2016.07 Â· í”„ë¡œì íŠ¸ ê´€ë¦¬ ê¸°ì´ˆ (FPT Software)",
+                         "2009.10 Â· UML ê¸°ë°˜ ì‹œìŠ¤í…œ ë¶„ì„ ë° ì„¤ê³„ (IBM)",
+                         "2006.06 Â· ì •ë³´ì²˜ë¦¬ê¸°ì‚¬ (ê³¼í•™ê¸°ìˆ ë¶€)"
                      ],
     "languages":  [
-                      "영어 · TOEIC 710 (2016.12)",
-                      "한국어 · 일상 회화 가능"
+                      "ì˜ì–´ Â· TOEIC 710 (2016.12)",
+                      "í•œêµ­ì–´ Â· ì¼ìƒ íšŒí™” ê°€ëŠ¥"
                   ],
     "about":  [
-                  "19+ năm kinh nghiệm phát triển ứng dụng; theo đuổi học hỏi công nghệ mới và giải quyết vấn đề thực tiễn.",
-                  "Kinh nghiệm đa quốc gia (Mỹ, Úc, Singapore, Anh, Nhật, Hàn); quen thuộc văn hóa/kỹ thuật làm việc tại Hàn Quốc.",
-                  "Hoạt động cộng đồng kỹ thuật: từng top 2% Stack Overflow; hiện khai thác AI (ChatGPT) để tăng tốc học tập và công việc.",
-                  "F5 영주권, 사회통합프로그램 6단계 수료; sẵn sàng hợp tác lâu dài tại Hàn Quốc."
+                  "19+ nÄƒm kinh nghiá»‡m phÃ¡t triá»ƒn á»©ng dá»¥ng; theo Ä‘uá»•i há»c há»i cÃ´ng nghá»‡ má»›i vÃ  giáº£i quyáº¿t váº¥n Ä‘á» thá»±c tiá»…n.",
+                  "Kinh nghiá»‡m Ä‘a quá»‘c gia (Má»¹, Ãšc, Singapore, Anh, Nháº­t, HÃ n); quen thuá»™c vÄƒn hÃ³a/ká»¹ thuáº­t lÃ m viá»‡c táº¡i HÃ n Quá»‘c.",
+                  "Hoáº¡t Ä‘á»™ng cá»™ng Ä‘á»“ng ká»¹ thuáº­t: tá»«ng top 2% Stack Overflow; hiá»‡n khai thÃ¡c AI (ChatGPT) Ä‘á»ƒ tÄƒng tá»‘c há»c táº­p vÃ  cÃ´ng viá»‡c.",
+                  "F5 ì˜ì£¼ê¶Œ, ì‚¬íšŒí†µí•©í”„ë¡œê·¸ëž¨ 6ë‹¨ê³„ ìˆ˜ë£Œ; sáºµn sÃ ng há»£p tÃ¡c lÃ¢u dÃ i táº¡i HÃ n Quá»‘c."
               ]
 }
