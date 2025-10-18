@@ -1,0 +1,224 @@
+﻿{
+    "labels":  {
+                   "resume":  "Resume",
+                   "productCaseStudies":  "Product Case Studies",
+                   "profile":  "Profile",
+                   "certificates":  "Certificates",
+                   "community":  "Community",
+                   "portfolioSpotlight":  "Portfolio Spotlight",
+                   "address":  "Address",
+                   "view":  "View",
+                   "viewOnSO":  "View on Stack Overflow",
+                   "phone":  "Phone",
+                   "email":  "Email"
+               },
+    "hero":  {
+                 "email":  "nguyenviethien@gmail.com",
+                 "summary":  [
+                                 "Senior software developer with 19+ years across desktop, embedded, and web.",
+                                 "Hands-on with device communication (USB/BLE/Socket), real-time UIs, and data systems.",
+                                 "Comfortable in C#/.NET, WPF/MFC, C++/Qt, React, Python/Flask, Java/Spring."
+                             ],
+                 "name":  "Nguyen Viet Hien",
+                 "phone":  "010-8683-1183",
+                 "address":  "Seoul, South Korea"
+             },
+    "resume":  {
+                   "summary":  [
+                                   "Senior Software Developer v�\u003ei 19+ n�fm kinh nghi�?m (Desktop, Embedded, Web).",
+                                   "Hi�?n làm tại (주) �?��?�-� �?\" phát tri�fn phần mềm giao tiếp máy �\u0027o phóng xạ, desktop và web.",
+                                   "Thành thạo C#/.NET, WPF, MFC, C++/Qt; Web v�\u003ei ASP.NET MVC/Web API, React; Python/Flask; DB SQL/SQLite.",
+                                   "Kinh nghi�?m giao tiếp thiết b�\u003c: USB/WiFi/HID, socket/serial, �\u0027a lu�\"ng, �\u0027�\"ng b�T thiết b�\u003c-PC.",
+                                   "Qu�\u0027c tế: từng làm v�\u003ei khách hàng Mỹ, �sc, Singapore, Anh, Nhật; làm vi�?c tại Hàn Qu�\u0027c ~7 n�fm.",
+                                   "Tiếng Anh TOEIC 710; tiếng Hàn giao tiếp hằng ngày; F5 �~�주�O, �,��sO�?��.��\"\"�o그�z� 6�\u003c��\"."
+                               ],
+                   "experiences":  [
+                                       {
+                                           "title":  "Senior Software Developer (Desktop, Embedded, Web Applications)",
+                                           "company":  "(?) ???",
+                                           "period":  "2022.09 �?\" �z�직�\u0027",
+                                           "highlights":  [
+                                                              "???? ??????",
+                                                              "????, USB ? TCP/IP ??? ?? ??? ???? ???? ???? ?????? ??.",
+                                                              "???? ?? ???? ?? ???? ??.",
+                                                              "WPF? MFC? ???? UI ???? ??, Infragistics ?????? ???? ??? ?? ??.",
+                                                              "?? ? ?????? ??? ????, ??? PC ?? ??? ?? ??.",
+                                                              "USB ? ?? ?????? ?? ?? ?? ??? ???? ?? ??? ?? ???? ??.",
+                                                              "?? ??: C#, WPF, C++ MFC, MVVM Light, Infragistics, SQLite, Socket, ??? ?? ??, ?????.",
+                                                              "???? ??????",
+                                                              "??? ?? ??? ??? ???? ???? ?????? ?? ? ??.",
+                                                              "USB/WiFi ??, ??? ???? ???, STM32 ?? CSV/PDF ??? ?? ?? ??.",
+                                                              "USB HID? ?? ??-???? ? ?? ?? ???? ??.",
+                                                              "??? ???? ??? ??? ?? Buildroot ??.",
+                                                              "?? ??: Linux Buildroot, Qt, C++, STM32, USB HID, Socket, ??? ?? ??.",
+                                                              "? ??????",
+                                                              "??? ??? ??? ???? ??? ???? ? ?? ??.",
+                                                              "??? ?? ??? ??? ?? ?????? ???.",
+                                                              "?? ?? ?? ?? ?? ??, ??? ??/???? ??? ??.",
+                                                              "?? ??: ReactJS, Python Flask, Spring Boot, MyBatis."
+                                                          ]
+                                       },
+                                       {
+                                           "title":  "과�z� / Senior Software Developer",
+                                           "company":  "BNF Technology",
+                                           "period":  "2018.09 �?\" 2022.09",
+                                           "highlights":  [
+                                                              "HanPrism Insight 3.0 �\u0027?�S��f�(C#/ASP.NET Web API + Angular).",
+                                                              "�\u003c��\u003co�\": �\"��~. 차�S�(Highcharts), 미믹 �\u003co뮬�^이�.~(SignalR), �O?�\u003co보�\"o �O�\", �.O�zO.",
+                                                              "�,��\"� �-��\"^�? �?리 �\u003co�S��.o: 10+ �O?�\u003co보�\"o(�\"�\"�/리포�O.).",
+                                                              "KOEN Mobile(Java Spring): 보�.^/�O�.o/모�\"일 API �o�\"�.",
+                                                              "주�s\" �-��.�: �\u003eO크�\"O�o�s�·DB·백�-\"�\"o �\"��\", Web API, �\"\"론�S��-\"�\"o 구�~\", �\"그 �^~�., �\u003c�기�^� �?�?�, 주�\u003c^�-� �~�?�링.",
+                                                              "�S��f�: C#, ASP.NET MVC/Web API, Angular, TypeScript, Highcharts, SignalR, DevExpress, EF, MySQL/MariaDB, Java Spring, Git/SVN."
+                                                          ]
+                                       },
+                                       {
+                                           "title":  "Senior Developer / Senior Engineer",
+                                           "company":  "FPT Software",
+                                           "period":  "2012.11 �?\" 2018.09",
+                                           "highlights":  [
+                                                              "�~�주/�\u003c��?포르/�~�국 고객 �\"\"�o젝�S�: Biddly Contests, CdmPrint, R4YL, MOE(�\u003c��?포르 교�o��?), MSO(�~�국 모기�?).",
+                                                              "�s\"구�,��.�·�\u003co�S��.o �\"��\", Web API/WCF 백�-\"�\"o, MVC/JavaScript �\"\"론�S��-\"�\"o, 결�o·인증·�\u003eO크�\"O�o�s� 구�~\", �o적�T\"/�.O�S��S�.",
+                                                              "�S��f�: C#, ASP.NET MVC/Web API, WCF, Entity Framework, PetaPoco, HTML5/CSS3, jQuery, KendoUI, MVVM JS, Umbraco, SQL Server, SVN/Git."
+                                                          ]
+                                       },
+                                       {
+                                           "title":  "Senior Developer",
+                                           "company":  "CMC Software (OSDC)",
+                                           "period":  "2008.03 �?\" 2012.11",
+                                           "highlights":  [
+                                                              "미국/일본 �\"\"�o젝�S�: CRM Web API, Calphalon e-Commerce, Cooking.com, EAS(일본) �\"\"�o젝�S� �?리 포�\"�.",
+                                                              "�.��\u003c� 기�S�: �\"�z��f�거�z~ 결�o, 인증, �\u003eO크�\"O�o�s�, 리포�O., �f?�z\"�\u003co�S� �\"�.",
+                                                              "�S��f�: C#, ASP.NET MVC/Web API, LINQ, WCF, Java Spring MVC, HTML5/CSS3/JS, DI(Ninject/Windsor/Seasar), SQL Server/MySQL, NUnit, TFS/SVN."
+                                                          ]
+                                       },
+                                       {
+                                           "title":  "�O?리 / Software Developer (Windows)",
+                                           "company":  "AVASYS Vietnam (EPSON)",
+                                           "period":  "2006.06 �?\" 2008.02",
+                                           "highlights":  [
+                                                              "데�S�크�?� �o��\u003c�리�\u003c� �o�o 및 �o��?보�^~: Printer Support/Setting, Drawing, Scanner, Zebra Printer.",
+                                                              "�S��f�: Visual C++ MFC, WinForms, XML/INI 구�\"�, UI 폼 �\"\"�z�인, �?�\u003c��S��^�\"�."
+                                                          ]
+                                       }
+                                   ],
+                   "skills":  [
+                                  ".NET",
+                                  "C#",
+                                  "WPF",
+                                  "MFC",
+                                  "C++",
+                                  "Qt",
+                                  "ASP.NET MVC /Web API",
+                                  "Java",
+                                  "Spring Boot",
+                                  "Spring MVC",
+                                  "TypeScript",
+                                  "Angular",
+                                  "React",
+                                  "JavaScript",
+                                  "jQuery",
+                                  "Highcharts",
+                                  "SignalR",
+                                  "DevExpress",
+                                  "Entity Framework/JPA/MyBatis",
+                                  "MySQL",
+                                  "MariaDB",
+                                  "SQL Server",
+                                  "SQLite",
+                                  "Python/Flask",
+                                  "HTML5",
+                                  "CSS3",
+                                  "Tomcat",
+                                  "Git",
+                                  "SVN",
+                                  "Socket",
+                                  "Serial",
+                                  "USB HID",
+                                  "Embedded Linux (Buildroot)",
+                                  "Visual Studio 2022",
+                                  "Visual Code",
+                                  "Eclipse",
+                                  "Qt Creator",
+                                  "STM32Cube"
+                              ],
+                   "education":  [
+                                     "2012.09 �?\" 2014.06 · �T�국무�-��O?�.T교 (�\"��,�과�.) 경�~��.T과 · GPA 84/100",
+                                     "2001.09 �?\" 2006.05 · �.~�.�이 공과�O?�.T교 �.보기�^��.T과 · GPA 75/100"
+                                 ],
+                   "certificates":  [
+                                        "2017.08 · AWS 공인 �?\"루�.~�S� �.\"�,��.��S� (AWS)",
+                                        "2017.08 · AWS 공인 �o�o�z� (AWS)",
+                                        "2017.07 · GE �\"O�z�폼 Predix �o�o�z� (General Electric)",
+                                        "2016.07 · �\"\"�o젝�S� �?리 기�^ (FPT Software)",
+                                        "2009.10 · UML 기�~ �\u003co�S��.o �\"�\"� 및 �\"��\" (IBM)",
+                                        "2006.06 · �.보�~리기�,� (과�.T기�^��?)"
+                                    ],
+                   "name":  "Nguyen Viet Hien",
+                   "contact":  {
+                                   "email":  "nguyenviethien@gmail.com",
+                                   "linkedin":  "",
+                                   "portfolio":  "",
+                                   "phone":  "010-8683-1183",
+                                   "address":  "�O?�\" �o��\"�구 �?��.�T"
+                               },
+                   "languages":  [
+                                     "�~��-� · TOEIC 710 (2016.12)",
+                                     "�.o국�-� · 일�f� �sO�T\" �?�S�"
+                                 ],
+                   "about":  [
+                                 "19+ n�fm kinh nghi�?m phát tri�fn ứng dụng; theo �\u0027u�.i học hỏi công ngh�? m�\u003ei và giải quyết vấn �\u0027ề thực ti�.n.",
+                                 "Kinh nghi�?m �\u0027a qu�\u0027c gia (Mỹ, �sc, Singapore, Anh, Nhật, Hàn); quen thu�Tc v�fn hóa/kỹ thuật làm vi�?c tại Hàn Qu�\u0027c.",
+                                 "Hoạt �\u0027�Tng c�Tng �\u0027�\"ng kỹ thuật: từng top 2% Stack Overflow; hi�?n khai thác AI (ChatGPT) �\u0027�f t�fng t�\u0027c học tập và công vi�?c.",
+                                 "F5 �~�주�O, �,��sO�?��.��\"\"�o그�z� 6�\u003c��\" �^~�O; sẵn sàng hợp tác lâu dài tại Hàn Qu�\u0027c."
+                             ]
+               },
+    "products":  {
+                     "rows":  [
+                                  {
+                                      "id":  "esave",
+                                      "product":  "eSave",
+                                      "title":  "eSave",
+                                      "description":  "",
+                                      "tone":  "blue",
+                                      "folder":  "esave"
+                                  },
+                                  {
+                                      "id":  "radtag",
+                                      "product":  "RadTag",
+                                      "title":  "RadTag",
+                                      "description":  "Cloud dashboards for radiation device data",
+                                      "tone":  "green",
+                                      "folder":  "radtag"
+                                  },
+                                  {
+                                      "id":  "erm",
+                                      "product":  "ERM",
+                                      "title":  "ERM",
+                                      "description":  "Python/Flask, SessionBus, Spring Boot, MyBatis",
+                                      "tone":  "purple",
+                                      "folder":  "erm"
+                                  },
+                                  {
+                                      "id":  "peakgo",
+                                      "product":  "PeakGo",
+                                      "title":  "PeakGo",
+                                      "description":  "Bluetooth-connected radiation detector app",
+                                      "tone":  "blue",
+                                      "folder":  "peakgo"
+                                  },
+                                  {
+                                      "id":  "peakid",
+                                      "product":  "PeakID",
+                                      "title":  "PeakID",
+                                      "description":  "Desktop data analysis for spectra",
+                                      "tone":  "green",
+                                      "folder":  "peakid"
+                                  }
+                              ]
+                 },
+    "stackoverflowId":  4964569,
+    "links":  {
+                  "linkedin":  "https://www.linkedin.com/in/nguyenviethien",
+                  "github":  "https://github.com/nguyenviethien"
+              }
+}
