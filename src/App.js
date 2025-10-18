@@ -118,7 +118,7 @@ function PDFThumbnail({ url, width = 320, height = 220, title }) {
 }
 
 function App() {
-  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'ko');
+  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'kr');
   const [i18nMap, setI18nMap] = useState(null);
   const fallbackI18n = {
     en: {
@@ -134,18 +134,18 @@ function App() {
       profile: 'Profile',
       viewOnSO: 'View on Stack Overflow',
     },
-    ko: {
-      portfolioSpotlight: '포트폴리오 하이라이트',
-      certificates: '자격증',
-      productCaseStudies: '제품 사례 연구',
-      resume: '이력서',
-      email: '이메일',
-      phone: '전화',
-      address: '주소',
-      view: '보기',
-      community: '커뮤니티',
-      profile: '프로필',
-      viewOnSO: '스택 오버플로우에서 보기',
+    kr: {
+      portfolioSpotlight: '????? ?????',
+      certificates: '???',
+      productCaseStudies: '?? ?? ??',
+      resume: '???',
+      email: '???',
+      phone: '??',
+      address: '??',
+      view: '??',
+      community: '????',
+      profile: '???',
+      viewOnSO: 'Stack Overflow?? ??',
     },
   };
   const t = (key) => (i18nMap && i18nMap[key]) || (fallbackI18n[lang] && fallbackI18n[lang][key]) || fallbackI18n.en[key] || key;
@@ -733,4 +733,5 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
