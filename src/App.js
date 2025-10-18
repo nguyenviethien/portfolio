@@ -168,14 +168,6 @@ function App() {
 
   return (
     <div className="app">
-      <header className="hero">
-        <div className="lang-switch">
-          <label htmlFor="lang" className="sr-only">Language</label>
-          <select id="lang" className="lang-select" value={lang} onChange={(e) => setLang(e.target.value)}>
-            <option value="en">English</option>
-            <option value="ko">한국어</option>
-          </select>
-        </div>
         <div className="hero__content">
           <div className="hero__top">
             {heroPhoto && (
