@@ -135,7 +135,7 @@ function App() {
   }, []);
 
   // Override hero with provided resume summary and contacts
-  const heroDefaults = {\n    name: 'Nguyen Viet Hien',\n    email: 'nguyenviethien@gmail.com',\n    phone: '010-8683-1183',\n    address: 'Seoul, South Korea',\n    summary: [\n      'Senior software developer with 19+ years across desktop, embedded, and web.',\n      'Hands-on with device communication (USB/BLE/Socket), real-time UIs, and data systems.',\n      'Comfortable in C#/.NET, WPF/MFC, C++/Qt, React, Python/Flask, Java/Spring.',\n    ],\n  };\n  const heroInfo = (site && site.hero) ? site.hero : heroDefaults;
+  const heroInfo = (site && site.hero) ? site.hero : { name: '', email: '', phone: '', address: '', summary: [] };
 
   // Load custom hero image
   let heroPhoto = null;
@@ -657,6 +657,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
