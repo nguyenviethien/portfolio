@@ -197,7 +197,7 @@ function App() {
       </header>
 
       <main>
-        <ResumeSection t={t} />
+        <ResumeSection t={t} resumeData={site?.resume || null} />
         {/* Portfolio gallery removed */}
 
         <section className="section">
@@ -660,6 +660,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
