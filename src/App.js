@@ -118,7 +118,10 @@ function PDFThumbnail({ url, width = 320, height = 220, title }) {
 }
 
 function App() {
-  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'kr');
+  const [lang, setLang] = useState(() => {
+    const saved = localStorage.getItem('lang');
+    return saved === 'ko' ? 'kr' : saved || 'kr';
+  });
   const [i18nMap, setI18nMap] = useState(null);
   const fallbackI18n = {
     en: {
@@ -237,9 +240,7 @@ function App() {
         <div className="lang-switch">
           <label htmlFor="lang" className="sr-only">Language</label>
           <select id="lang" className="lang-select" value={lang} onChange={(e) => setLang(e.target.value)}>
-            <option value="en">English</option>
-            <option value="ko">한국어</option>
-          </select>
+            <option value="en">English<\/option>\n            <option value="kr">???<\/option>\n          <\/select>
         </div>
         <div className="hero__content">
           <div className="hero__top">
@@ -733,5 +734,6 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
