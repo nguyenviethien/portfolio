@@ -266,8 +266,8 @@ function App() {
         </section>
 
         {/* Community section moved to the end */}
-        {!!profile.stackoverflowId && (
-          <StackOverflowSection t={t} userId={profile.stackoverflowId} />
+        {!!(site && site.stackoverflowId) && (
+          <StackOverflowSection t={t} userId={(site && site.stackoverflowId)} />
         )}
       </main>
 
@@ -286,7 +286,7 @@ function App() {
             },
             {
               key: 'linkedin',
-              href: profile.contact.linkedin,
+              href: (site && site.links && site.links.linkedin),
               label: 'LinkedIn',
               icon: (
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -296,7 +296,7 @@ function App() {
             },
             {
               key: 'github',
-              href: profile.contact.github,
+              href: (site && site.links && site.links.github),
               label: 'Github',
               icon: (
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -668,6 +668,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
