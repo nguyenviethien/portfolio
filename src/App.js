@@ -120,7 +120,7 @@ function PDFThumbnail({ url, width = 320, height = 220, title }) {
 function App() {
   const [lang, setLang] = useState(() => {
     const saved = localStorage.getItem('lang');
-    return saved === 'ko' ? 'kr' : saved || 'kr';
+    return saved || 'ko';
   });
   const [i18nMap, setI18nMap] = useState(null);
   const fallbackI18n = {
@@ -137,7 +137,7 @@ function App() {
       profile: 'Profile',
       viewOnSO: 'View on Stack Overflow',
     },
-    kr: {
+    ko: {
       portfolioSpotlight: '????? ?????',
       certificates: '???',
       productCaseStudies: '?? ?? ??',
@@ -157,7 +157,7 @@ function App() {
     localStorage.setItem('lang', lang);
     const bust = process.env.REACT_APP_BUILD || Date.now();
     let cancelled = false;
-    fetch(process.env.PUBLIC_URL + `/assets/i18n/${lang}.json?v=` + bust, { cache: 'no-cache' })
+    fetch(process.env.PUBLIC_URL + `/assets/content..json?v=` + bust, { cache: 'no-cache' })
       .then((r) => (r.ok ? r.json() : null))
       .then((json) => {
         if (!cancelled) setI18nMap(json);
@@ -734,6 +734,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
