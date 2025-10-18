@@ -193,10 +193,11 @@ function App() {
           <h2>{t('certificates')}</h2>
           <div className="grid cert-grid">
             {loadCertificates().map((item) => (
-              <article key={item.url} className="cert-card">
-                <header className="cert-header">
+                {item.type === 'image' ? (
+                </header>
                   <h3 className="cert-title">{item.name}</h3>
-                                {item.type === 'image' ? (
+                <header className="cert-header">
+              <article key={item.url} className="cert-card">
                   <figure className="cert-figure">
                     <img className="cert-thumb" src={item.url} alt={item.name} loading="lazy" />
                   </figure>
