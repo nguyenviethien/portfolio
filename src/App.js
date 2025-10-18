@@ -475,22 +475,30 @@ function ResumeSection({ t, resumeData }) {
           const res = { desktop: [], web: [], embedded: [], tools: [] };
           list.forEach((item) => {
             const s = String(item).toLowerCase();
+            // Tools first
             if (
+              s === 'tomcat' ||
+              s === 'git' ||
+              s === 'svn' ||
+              s.includes('visual studio code') ||
+              s.includes('visual code') ||
+              s.includes('visual studio 2022') ||
+              s.includes('visual studio') ||
+              s.includes('eclipse') ||
+              s.includes('qt creator') ||
+              s.includes('stm32cube')
+            ) {
+              res.tools.push(item);
+            } else if (
               s.includes('buildroot') ||
               s.includes('embedded') ||
               s.includes('stm32') ||
               s.includes('usb hid') ||
               s.includes('serial') ||
               s.includes('socket') ||
-              s.includes('qt')
+              (s.includes('qt') && !s.includes('qt creator'))
             ) {
               res.embedded.push(item);
-            } else if (
-              s === 'tomcat' ||
-              s === 'git' ||
-              s === 'svn'
-            ) {
-              res.tools.push(item);
             } else if (
               s.includes('asp.net') ||
               s.includes('web api') ||
@@ -526,6 +534,25 @@ function ResumeSection({ t, resumeData }) {
             } else {
               res.web.push(item);
             }
+          });
+          // Ensure priority tools appear first
+          const priorityTools = [
+            'visual studio 2022',
+            'visual studio code',
+            'visual code',
+            'eclipse',
+            'qt creator',
+            'stm32cube'
+          ];
+          res.tools.sort((a, b) => {
+            const an = String(a).toLowerCase();
+            const bn = String(b).toLowerCase();
+            const ai = priorityTools.indexOf(an);
+            const bi = priorityTools.indexOf(bn);
+            const ap = ai === -1 ? Number.MAX_SAFE_INTEGER : ai;
+            const bp = bi === -1 ? Number.MAX_SAFE_INTEGER : bi;
+            if (ap !== bp) return ap - bp;
+            return String(a).localeCompare(String(b));
           });
           return res;
         };
