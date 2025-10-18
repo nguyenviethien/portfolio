@@ -192,18 +192,7 @@ function App() {
   }, []);
 
   // Override hero with provided resume summary and contacts
-  const heroDefaults = {
-    name: 'Nguyen Viet Hien',
-    email: 'nguyenviethien@gmail.com',
-    phone: '010-8683-1183',
-    address: '대전 유성구 송강동',
-    summary: [
-      '저는 앱 개발 분야에서 19년 이상의 경험을 보유한 소프트웨어 개발자입니다. 하노이 공과대학교에서 정보기술(IT)을 전공(2001 - 2006)한 후 꾸준히 실무 경험을 쌓으며 최신 기술과 트렌드를 따라가고 있습니다. 뉴케어에서 과장으로 근무하며 라디에이션 탐지기 통신 소프트웨어와 데스크톱 및 웹 응용 프로그램을 개발하였고, .NET, WPF, C++, ASP.NET, MFC, SQLite, Java, MySQL, Python, Flask, React 등 다양한 기술을 활용한 경험이 있습니다.',
-      '저는 문제 해결 능력과 새로운 기술 학습에 강점을 가지고 있으며, 미국, 호주, 싱가포르, 일본, 한국 등 해외 클라이언트 프로젝트를 통해 글로벌 협업 경험을 쌓았습니다. 또한 한국 IT 기업에서 약 7년간 근무하며 현지 개발 문화와 협업 방식을 익혔습니다. ChatGPT 이전에는 Stack Overflow에서 활발히 활동하여 상위 2% 명성을 얻었고, 현재는 ChatGPT를 활용해 새로운 기술을 빠르게 습득하고 업무 문제를 효율적으로 해결하고 있습니다.',
-      '현재 한국에서 F5 영주권을 보유하고 있으며, 사회통합프로그램 최고 단계(6단계)를 수료하여 한국어로 생활 및 업무 의사소통이 가능합니다. 풍부한 개발 경험과 국제적 역량, 한국 근무 경력을 바탕으로 귀사에 빠르게 적응하고 효과적으로 기여할 수 있다고 자신합니다.'
-    ]
-  };
-  const heroInfo = { ...heroDefaults, ...(cvData?.hero || {}) };
+  const heroDefaults = {\n    name: 'Nguyen Viet Hien',\n    email: 'nguyenviethien@gmail.com',\n    phone: '010-8683-1183',\n    address: 'Seoul, South Korea',\n    summary: [\n      'Senior software developer with 19+ years across desktop, embedded, and web.',\n      'Hands-on with device communication (USB/BLE/Socket), real-time UIs, and data systems.',\n      'Comfortable in C#/.NET, WPF/MFC, C++/Qt, React, Python/Flask, Java/Spring.',\n    ],\n  };\n  const heroInfo = heroDefaults;
 
   // Load custom hero image
   let heroPhoto = null;
@@ -736,6 +725,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
