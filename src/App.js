@@ -155,13 +155,6 @@ function App() {
   const productImages = loadHanprismWebImages();
   const folderImages = (folder) => loadProductImages(folder).map((it) => ({ src: it.url, alt: it.name }));
   const displayCaseStudies = [];
-    } else if (cs.id === 'alert-governance' && productImages.alert.length) {
-      imgs = productImages.alert.map((it) => ({ src: it.url, alt: it.name }));
-    } else if (cs.id === 'mimic-builder' && productImages.mimic.length) {
-      imgs = productImages.mimic.map((it) => ({ src: it.url, alt: it.name }));
-    }
-    return { ...cs, images: imgs.length ? imgs : cs.images };
-  });
 
   return (
     <div className="app">
@@ -657,6 +650,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
