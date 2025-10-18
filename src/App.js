@@ -184,8 +184,7 @@ function App() {
             ))}
           </div>
         </div>
-      </header>
-
+      
       <main>
         <ResumeSection t={t} resumeData={site?.resume || null} />
         {/* Portfolio gallery removed */}
@@ -197,8 +196,7 @@ function App() {
               <article key={item.url} className="cert-card">
                 <header className="cert-header">
                   <h3 className="cert-title">{item.name}</h3>
-                </header>
-                {item.type === 'image' ? (
+                                {item.type === 'image' ? (
                   <figure className="cert-figure">
                     <img className="cert-thumb" src={item.url} alt={item.name} loading="lazy" />
                   </figure>
@@ -348,8 +346,7 @@ function ResumeSection({ t, resumeData }) {
                   <h3>{ex.title}</h3>
                   {ex.company && <p className="timeline__company">{ex.company}</p>}
                 </div>
-              </header>
-              {ex.highlights?.length > 0 && (
+                            {ex.highlights?.length > 0 && (
                 <ul className="timeline__highlights">
                   {ex.highlights.map((h) => (
                     <li key={h}>{h}</li>
@@ -541,8 +538,7 @@ function CaseCard({ caseStudy }) {
         <span className="case-card__product">{caseStudy.product}</span>
         <h3>{caseStudy.title}</h3>
         <p>{caseStudy.description}</p>
-      </header>
-      {!!total && (
+            {!!total && (
         <div className="case-card__preview">
           <div className="slideshow">
             <div className="slideshow__frame">
@@ -650,6 +646,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
