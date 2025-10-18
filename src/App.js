@@ -1,5 +1,5 @@
 import './App.css';
-import { profile, caseStudies } from './data/portfolio';
+// Removed hardcoded portfolio imports; data comes from site.json
 import { useEffect, useRef, useState } from 'react';
 
 // Load certificates from src/document/certificate at build time
@@ -118,72 +118,15 @@ function PDFThumbnail({ url, width = 320, height = 220, title }) {
 }
 
 function App() {
-  const [lang, setLang] = useState(() => {
-    const saved = localStorage.getItem('lang');
-    return saved || 'ko';
-  });
-  const [i18nMap, setI18nMap] = useState(null);
-  const fallbackI18n = {
-    en: {
-      portfolioSpotlight: 'Portfolio Spotlight',
-      certificates: 'Certificates',
-      productCaseStudies: 'Product Case Studies',
-      resume: 'Resume',
-      email: 'Email',
-      phone: 'Phone',
-      address: 'Address',
-      view: 'View',
-      community: 'Community',
-      profile: 'Profile',
-      viewOnSO: 'View on Stack Overflow',
-    },
-    ko: {
-      portfolioSpotlight: '????? ?????',
-      certificates: '???',
-      productCaseStudies: '?? ?? ??',
-      resume: '???',
-      email: '???',
-      phone: '??',
-      address: '??',
-      view: '??',
-      community: '????',
-      profile: '???',
-      viewOnSO: 'Stack Overflow?? ??',
-    },
-  };
-  const t = (key) => (i18nMap && i18nMap[key]) || (fallbackI18n[lang] && fallbackI18n[lang][key]) || fallbackI18n.en[key] || key;
-
-  useEffect(() => {
-    localStorage.setItem('lang', lang);
-    const bust = process.env.REACT_APP_BUILD || Date.now();
-    let cancelled = false;
-    fetch(process.env.PUBLIC_URL + `/assets/content..json?v=` + bust, { cache: 'no-cache' })
-      .then((r) => (r.ok ? r.json() : null))
-      .then((json) => {
-        if (!cancelled) setI18nMap(json);
-      })
-      .catch(() => {
-        if (!cancelled) setI18nMap(null);
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [lang]);
-  const [cvData, setCvData] = useState(null);
-  const [productsData, setProductsData] = useState(null);
+  const [site, setSite] = useState(null);
+  const t = (key) => (site && site.labels && site.labels[key]) || key;
   useEffect(() => {
     let active = true;
-    const bust = (process.env.REACT_APP_BUILD || Date.now());
-    fetch(process.env.PUBLIC_URL + '/assets/cv.json?v=' + bust, { cache: 'no-cache' })
+    const bust = process.env.REACT_APP_BUILD || Date.now();
+    fetch(process.env.PUBLIC_URL + '/assets/site.json?v=' + bust, { cache: 'no-cache' })
       .then((r) => (r.ok ? r.json() : null))
       .then((json) => {
-        if (active) setCvData(json);
-      })
-      .catch(() => {});
-    fetch(process.env.PUBLIC_URL + '/assets/products.json?v=' + bust, { cache: 'no-cache' })
-      .then((r) => (r.ok ? r.json() : null))
-      .then((json) => {
-        if (active) setProductsData(json);
+        if (active) setSite(json);
       })
       .catch(() => {});
     return () => {
@@ -192,7 +135,7 @@ function App() {
   }, []);
 
   // Override hero with provided resume summary and contacts
-  const heroDefaults = {\n    name: 'Nguyen Viet Hien',\n    email: 'nguyenviethien@gmail.com',\n    phone: '010-8683-1183',\n    address: 'Seoul, South Korea',\n    summary: [\n      'Senior software developer with 19+ years across desktop, embedded, and web.',\n      'Hands-on with device communication (USB/BLE/Socket), real-time UIs, and data systems.',\n      'Comfortable in C#/.NET, WPF/MFC, C++/Qt, React, Python/Flask, Java/Spring.',\n    ],\n  };\n  const heroInfo = heroDefaults;
+  const heroDefaults = {\n    name: 'Nguyen Viet Hien',\n    email: 'nguyenviethien@gmail.com',\n    phone: '010-8683-1183',\n    address: 'Seoul, South Korea',\n    summary: [\n      'Senior software developer with 19+ years across desktop, embedded, and web.',\n      'Hands-on with device communication (USB/BLE/Socket), real-time UIs, and data systems.',\n      'Comfortable in C#/.NET, WPF/MFC, C++/Qt, React, Python/Flask, Java/Spring.',\n    ],\n  };\n  const heroInfo = (site && site.hero) ? site.hero : heroDefaults;
 
   // Load custom hero image
   let heroPhoto = null;
@@ -725,6 +668,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
