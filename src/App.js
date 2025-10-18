@@ -220,7 +220,6 @@ function App() {
         <section className="section">
           <h2>{t('productCaseStudies')}</h2>
           <div className="grid case-grid">
-          <div className="grid case-grid">
             {(site?.products?.rows || []).map((row) => {
               const imgs = row.folder ? folderImages(row.folder) : [];
               if (!imgs.length) return null;
@@ -239,9 +238,6 @@ function App() {
                 />
               );
             })}
-          </div>
-              <CaseCard key={caseStudy.id} caseStudy={caseStudy} />
-            ))}
           </div>
         </section>
 
