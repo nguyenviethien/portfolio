@@ -270,7 +270,7 @@ function App() {
       </header>
 
       <main>
-        <ResumeSection t={t} resumeData={cvData?.resume || null} />
+        <ResumeSection t={t} />
         {/* Portfolio gallery removed */}
 
         <section className="section">
