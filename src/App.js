@@ -535,6 +535,7 @@ function CaseCard({ caseStudy }) {
         <span className="case-card__product">{caseStudy.product}</span>
         <h3>{caseStudy.title}</h3>
         <p>{caseStudy.description}</p>
+      </header>
             {!!total && (
         <div className="case-card__preview">
           <div className="slideshow">
