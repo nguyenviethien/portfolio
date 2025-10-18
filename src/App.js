@@ -240,15 +240,14 @@ function App() {
         <section className="section">
           <h2>{t('productCaseStudies')}</h2>
           <div className="grid case-grid">
-            {[
-              ...displayCaseStudies
-                .filter((cs) => cs.product?.toLowerCase().includes('hanprism'))
-                .slice(0, 1),
-              ...((productsData?.rows || [])
-                .map((row) => {
-                  const imgs = row.folder ? folderImages(row.folder) : [];
-                  if (!imgs.length) return null;
-                  return {
+          <div className="grid case-grid">
+            {(site?.products?.rows || []).map((row) => {
+              const imgs = row.folder ? folderImages(row.folder) : [];
+              if (!imgs.length) return null;
+              return (
+                <CaseCard
+                  key={row.id}
+                  caseStudy={{
                     id: row.id,
                     product: row.product,
                     title: row.title || row.product,
@@ -256,10 +255,11 @@ function App() {
                     images: imgs,
                     screens: row.screens || [],
                     tone: row.tone || 'blue'
-                  };
-                })
-                .filter(Boolean))
-            ].map((caseStudy) => (
+                  }}
+                />
+              );
+            })}
+          </div>
               <CaseCard key={caseStudy.id} caseStudy={caseStudy} />
             ))}
           </div>
