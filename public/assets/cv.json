@@ -1,127 +1,127 @@
 ﻿{
-    "hero":  {
-                 "name":  "Nguyen Viet Hien",
-                 "title":  "Senior Software Researcher",
-                 "email":  "nguyenviethien@gmail.com",
-                 "phone":  "010-8683-1183",
-                 "address":  "ëŒ€ì „ ìœ ì„±êµ¬ ì†¡ê°•ë™",
-                 "summary":  [
-                                 "ì €ëŠ” ì•± ê°œë°œ ë¶„ì•¼ì—ì„œ 19ë…„ ì´ìƒì˜ ê²½í—˜ì„ ë³´ìœ í•œ ì†Œí”„íŠ¸ì›¨ì–´ ê°œë°œìžìž…ë‹ˆë‹¤. í•˜ë…¸ì´ ê³µê³¼ëŒ€í•™êµì—ì„œ ì •ë³´ê¸°ìˆ (IT)ì„ ì „ê³µ(2001 - 2006)í•œ í›„ ê¾¸ì¤€ížˆ ì‹¤ë¬´ ê²½í—˜ì„ ìŒ“ìœ¼ë©° ìµœì‹  ê¸°ìˆ ê³¼ íŠ¸ë Œë“œë¥¼ ë”°ë¼ê°€ê³  ìžˆìŠµë‹ˆë‹¤. ë‰´ì¼€ì–´ì—ì„œ ê³¼ìž¥ìœ¼ë¡œ ê·¼ë¬´í•˜ë©° ë¼ë””ì—ì´ì…˜ íƒì§€ê¸° í†µì‹  ì†Œí”„íŠ¸ì›¨ì–´ì™€ ë°ìŠ¤í¬í†± ë° ì›¹ ì‘ìš© í”„ë¡œê·¸ëž¨ì„ ê°œë°œí•˜ì˜€ê³ , .NET, WPF, C++, ASP.NET, MFC, SQLite, Java, MySQL, Python, Flask, React ë“± ë‹¤ì–‘í•œ ê¸°ìˆ ì„ í™œìš©í•œ ê²½í—˜ì´ ìžˆìŠµë‹ˆë‹¤.",
-                                 "ì €ëŠ” ë¬¸ì œ í•´ê²° ëŠ¥ë ¥ê³¼ ìƒˆë¡œìš´ ê¸°ìˆ  í•™ìŠµì— ê°•ì ì„ ê°€ì§€ê³  ìžˆìœ¼ë©°, ë¯¸êµ­, í˜¸ì£¼, ì‹±ê°€í¬ë¥´, ì¼ë³¸, í•œêµ­ ë“± í•´ì™¸ í´ë¼ì´ì–¸íŠ¸ í”„ë¡œì íŠ¸ë¥¼ í†µí•´ ê¸€ë¡œë²Œ í˜‘ì—… ê²½í—˜ì„ ìŒ“ì•˜ìŠµë‹ˆë‹¤. ë˜í•œ í•œêµ­ IT ê¸°ì—…ì—ì„œ ì•½ 7ë…„ê°„ ê·¼ë¬´í•˜ë©° í˜„ì§€ ê°œë°œ ë¬¸í™”ì™€ í˜‘ì—… ë°©ì‹ì„ ìµí˜”ìŠµë‹ˆë‹¤. ChatGPT ì´ì „ì—ëŠ” Stack Overflowì—ì„œ í™œë°œížˆ í™œë™í•˜ì—¬ ìƒìœ„ 2% ëª…ì„±ì„ ì–»ì—ˆê³ , í˜„ìž¬ëŠ” ChatGPTë¥¼ í™œìš©í•´ ìƒˆë¡œìš´ ê¸°ìˆ ì„ ë¹ ë¥´ê²Œ ìŠµë“í•˜ê³  ì—…ë¬´ ë¬¸ì œë¥¼ íš¨ìœ¨ì ìœ¼ë¡œ í•´ê²°í•˜ê³  ìžˆìŠµë‹ˆë‹¤.",
-                                 "í˜„ìž¬ í•œêµ­ì—ì„œ F5 ì˜ì£¼ê¶Œì„ ë³´ìœ í•˜ê³  ìžˆìœ¼ë©°, ì‚¬íšŒí†µí•©í”„ë¡œê·¸ëž¨ ìµœê³  ë‹¨ê³„(6ë‹¨ê³„)ë¥¼ ìˆ˜ë£Œí•˜ì—¬ í•œêµ­ì–´ë¡œ ìƒí™œ ë° ì—…ë¬´ ì˜ì‚¬ì†Œí†µì´ ê°€ëŠ¥í•©ë‹ˆë‹¤. í’ë¶€í•œ ê°œë°œ ê²½í—˜ê³¼ êµ­ì œì  ì—­ëŸ‰, í•œêµ­ ê·¼ë¬´ ê²½ë ¥ì„ ë°”íƒ•ìœ¼ë¡œ ê·€ì‚¬ì— ë¹ ë¥´ê²Œ ì ì‘í•˜ê³  íš¨ê³¼ì ìœ¼ë¡œ ê¸°ì—¬í•  ìˆ˜ ìžˆë‹¤ê³  ìžì‹ í•©ë‹ˆë‹¤."
-                             ]
-             },
-    "resume":  {
-                   "education":  [
-                                     "2012.09 â€“ 2014.06 Â· ì™¸êµ­ë¬´ì—­ëŒ€í•™êµ (ì„ì‚¬ê³¼ì •) ê²½ì˜í•™ê³¼ Â· GPA 84/100",
-                                     "2001.09 â€“ 2006.05 Â· í•˜ë…¸ì´ ê³µê³¼ëŒ€í•™êµ ì •ë³´ê¸°ìˆ í•™ê³¼ Â· GPA 75/100"
-                                 ],
-                   "skills":  [
-                                  ".NET",
-                                  "C#",
-                                  "WPF",
-                                  "MFC",
-                                  "C++",
-                                  "Qt",
-                                  "ASP.NET MVC /Web API",
-                                  "Java",
-                                  "Spring Boot",
-                                  "Spring MVC",
-                                  "TypeScript",
-                                  "Angular",
-                                  "React",
-                                  "JavaScript",
-                                  "jQuery",
-                                  "Highcharts",
-                                  "SignalR",
-                                  "DevExpress",
-                                  "Entity Framework/JPA/MyBatis",
-                                  "MySQL",
-                                  "MariaDB",
-                                  "SQL Server",
-                                  "SQLite",
-                                  "Python/Flask",
-                                  "HTML5",
-                                  "CSS3",
-                                  "Tomcat",
-                                  "Git",
-                                  "SVN",
-                                  "Socket",
-                                  "Serial",
-                                  "USB HID",
-                                  "Embedded Linux (Buildroot)",
-                                  "Visual Studio 2022",
-                                  "Visual Code",
-                                  "Eclipse",
-                                  "Qt Creator",
-                                  "STM32Cube"
-                              ],
-                   "experiences":  [
-                                       {
-                                           "period":  "2022.09 â€“ ìž¬ì§ì¤‘",
-                                           "title":  "ì„ ìž„ì—°êµ¬ì› / Senior Software Developer",
-                                           "company":  "(ì£¼) ë‰´ì¼€ì–´",
-                                           "highlights":  [
-                                                              "ë°ìŠ¤í¬í†±: ë°©ì‚¬ì„  ê²€ì¶œê¸°ì™€ Bluetooth/USB í†µì‹ , í”„ë¡œí† ì½œ ì •ì˜, WPF/MFC UI, Infragistics ì°¨íŠ¸, ìž¥ì¹˜-PC ë™ê¸°í™”, USB/ì†Œì¼“ ëª…ë ¹ ì²˜ë¦¬.",
-                                                              "ìž„ë² ë””ë“œ: ë¦¬ëˆ…ìŠ¤ ê¸°ë°˜ íœ´ëŒ€ìš© ê²€ì¶œê¸° ì•±, USB/WiFi, ì»¤ìŠ¤í…€ í‚¤ë³´ë“œ, STM32 ê¸°ë°˜ CSV/PDF ë¦¬í¬íŠ¸, USB HID í†µì‹ , Buildroot.",
-                                                              "ì›¹: ì‹¤ì‹œê°„ ëª¨ë‹ˆí„°ë§, ì´ë ¥ DB ìž¬ì„¤ê³„, ì§€ë„ ê¸°ë°˜ ì¶”ì , ì„ ëŸ‰/ìŠ¤íŽ™íŠ¸ëŸ¼ ì‹œê°í™” (ReactJS, Flask, Spring Boot, MyBatis).",
-                                                              "ìŠ¤íƒ: C#, WPF, C++/MFC, MVVM Light, Infragistics, SQLite, Socket/Serial, Linux Buildroot, Qt, STM32."
-                                                          ]
-                                       },
-                                       {
-                                           "period":  "2018.09 â€“ 2022.09",
-                                           "title":  "ê³¼ìž¥ / Senior Software Developer",
-                                           "company":  "BNF Technology",
-                                           "highlights":  [
-                                                              "HanPrism Insight 3.0 í’€ìŠ¤íƒ(C#/ASP.NET Web API + Angular).",
-                                                              "ì‹¤ì‹œê°„: ì„ í˜• ì°¨íŠ¸(Highcharts), ë¯¸ë¯¹ ì‹œë®¬ë ˆì´ì…˜(SignalR), ëŒ€ì‹œë³´ë“œ ë¹Œë”, ì•ŒëžŒ.",
-                                                              "ì‚¼ì„± ì—ë„ˆì§€ ê´€ë¦¬ ì‹œìŠ¤í…œ: 10+ ëŒ€ì‹œë³´ë“œ(ë¶„ì„/ë¦¬í¬íŒ…).",
-                                                              "KOEN Mobile(Java Spring): ë³´ì•ˆ/ê¶Œí•œ/ëª¨ë°”ì¼ API ê°œì„ .",
-                                                              "ì£¼ìš” ì—­í• : ì›Œí¬í”Œë¡œìš°Â·DBÂ·ë°±ì—”ë“œ ì„¤ê³„, Web API, í”„ë¡ íŠ¸ì—”ë“œ êµ¬í˜„, ë²„ê·¸ ìˆ˜ì •, ì‹ ê¸°ìˆ  ê²€í† , ì£¼ë‹ˆì–´ ë©˜í† ë§.",
-                                                              "ìŠ¤íƒ: C#, ASP.NET MVC/Web API, Angular, TypeScript, Highcharts, SignalR, DevExpress, EF, MySQL/MariaDB, Java Spring, Git/SVN."
-                                                          ]
-                                       },
-                                       {
-                                           "period":  "2012.11 â€“ 2018.09",
-                                           "title":  "Senior Developer / Senior Engineer",
-                                           "company":  "FPT Software",
-                                           "highlights":  [
-                                                              "í˜¸ì£¼/ì‹±ê°€í¬ë¥´/ì˜êµ­ ê³ ê° í”„ë¡œì íŠ¸: Biddly Contests, CdmPrint, R4YL, MOE(ì‹±ê°€í¬ë¥´ êµìœ¡ë¶€), MSO(ì˜êµ­ ëª¨ê¸°ì§€).",
-                                                              "ìš”êµ¬ì‚¬í•­Â·ì‹œìŠ¤í…œ ì„¤ê³„, Web API/WCF ë°±ì—”ë“œ, MVC/JavaScript í”„ë¡ íŠ¸ì—”ë“œ, ê²°ì œÂ·ì¸ì¦Â·ì›Œí¬í”Œë¡œìš° êµ¬í˜„, ìµœì í™”/í…ŒìŠ¤íŠ¸.",
-                                                              "ìŠ¤íƒ: C#, ASP.NET MVC/Web API, WCF, Entity Framework, PetaPoco, HTML5/CSS3, jQuery, KendoUI, MVVM JS, Umbraco, SQL Server, SVN/Git."
-                                                          ]
-                                       },
-                                       {
-                                           "period":  "2008.03 â€“ 2012.11",
-                                           "title":  "Senior Developer",
-                                           "company":  "CMC Software (OSDC)",
-                                           "highlights":  [
-                                                              "ë¯¸êµ­/ì¼ë³¸ í”„ë¡œì íŠ¸: CRM Web API, Calphalon e-Commerce, Cooking.com, EAS(ì¼ë³¸) í”„ë¡œì íŠ¸ ê´€ë¦¬ í¬í„¸.",
-                                                              "í•µì‹¬ ê¸°ëŠ¥: ì „ìžìƒê±°ëž˜ ê²°ì œ, ì¸ì¦, ì›Œí¬í”Œë¡œìš°, ë¦¬í¬íŒ…, íƒ€ìž„ì‹œíŠ¸ ë“±.",
-                                                              "ìŠ¤íƒ: C#, ASP.NET MVC/Web API, LINQ, WCF, Java Spring MVC, HTML5/CSS3/JS, DI(Ninject/Windsor/Seasar), SQL Server/MySQL, NUnit, TFS/SVN."
-                                                          ]
-                                       },
-                                       {
-                                           "period":  "2006.06 â€“ 2008.02",
-                                           "title":  "ëŒ€ë¦¬ / Software Developer (Windows)",
-                                           "company":  "AVASYS Vietnam (EPSON)",
-                                           "highlights":  [
-                                                              "ë°ìŠ¤í¬í†± ìœ í‹¸ë¦¬í‹° ê°œë°œ ë° ìœ ì§€ë³´ìˆ˜: Printer Support/Setting, Drawing, Scanner, Zebra Printer.",
-                                                              "ìŠ¤íƒ: Visual C++ MFC, WinForms, XML/INI êµ¬ì„±, UI í¼ ë””ìžì¸, ë©€í‹°ìŠ¤ë ˆë”©."
-                                                          ]
-                                       }
-                                   ]
-               },
-    "profile":  {
-                    "contact":  {
-                                    "portfolio":  "https://your-portfolio.com",
-                                    "linkedin":  "https://www.linkedin.com/in/nguyenviethien",
-                                    "stackoverflow":  "https://stackoverflow.com/users/4964569",
-                                    "github":  "https://github.com/nguyenviethien"
-                                },
-                    "heroImage":  {
-                                      "src":  "/assets/hanprism-hero.svg",
-                                      "alt":  "Composite of HanPrism Insight dashboards and controls"
-                                  }
-                }
+    "hero": {
+        "name": "Nguyen Viet Hien",
+        "title": "Senior Software Researcher",
+        "email": "nguyenviethien@gmail.com",
+        "phone": "010-8683-1183",
+        "address": "대전 유성구 송강동",
+        "summary": [
+            "저는 앱 개발 분야에서 19년 이상의 경험을 보유한 소프트웨어 개발자입니다. 하노이 공과대학교에서 정보기술(IT)을 전공(2001 - 2006)한 후 꾸준히 실무 경험을 쌓으며 최신 기술과 트렌드를 따라가고 있습니다. 뉴케어에서 과장으로 근무하며 라디에이션 탐지기 통신 소프트웨어와 데스크톱 및 웹 응용 프로그램을 개발하였고, .NET, WPF, C++, ASP.NET, MFC, SQLite, Java, MySQL, Python, Flask, React 등 다양한 기술을 활용한 경험이 있습니다.",
+            "저는 문제 해결 능력과 새로운 기술 학습에 강점을 가지고 있으며, 미국, 호주, 싱가포르, 일본, 한국 등 해외 클라이언트 프로젝트를 통해 글로벌 협업 경험을 쌓았습니다. 또한 한국 IT 기업에서 약 7년간 근무하며 현지 개발 문화와 협업 방식을 익혔습니다. ChatGPT 이전에는 Stack Overflow에서 활발히 활동하여 상위 2% 명성을 얻었고, 현재는 ChatGPT를 활용해 새로운 기술을 빠르게 습득하고 업무 문제를 효율적으로 해결하고 있습니다.",
+            "현재 한국에서 F5 영주권을 보유하고 있으며, 사회통합프로그램 최고 단계(6단계)를 수료하여 한국어로 생활 및 업무 의사소통이 가능합니다. 풍부한 개발 경험과 국제적 역량, 한국 근무 경력을 바탕으로 귀사에 빠르게 적응하고 효과적으로 기여할 수 있다고 자신합니다."
+        ]
+    },
+    "resume": {
+        "education": [
+            "2012.09 – 2014.06 · 외국무역대학교 (석사과정) 경영학과 · GPA 84/100",
+            "2001.09 – 2006.05 · 하노이 공과대학교 정보기술학과 · GPA 75/100"
+        ],
+        "skills": [
+            ".NET",
+            "C#",
+            "WPF",
+            "MFC",
+            "C++",
+            "Qt",
+            "ASP.NET MVC /Web API",
+            "Java",
+            "Spring Boot",
+            "Spring MVC",
+            "TypeScript",
+            "Angular",
+            "React",
+            "JavaScript",
+            "jQuery",
+            "Highcharts",
+            "SignalR",
+            "DevExpress",
+            "Entity Framework/JPA/MyBatis",
+            "MySQL",
+            "MariaDB",
+            "SQL Server",
+            "SQLite",
+            "Python/Flask",
+            "HTML5",
+            "CSS3",
+            "Tomcat",
+            "Git",
+            "SVN",
+            "Socket",
+            "Serial",
+            "USB HID",
+            "Embedded Linux (Buildroot)",
+            "Visual Studio 2022",
+            "Visual Code",
+            "Eclipse",
+            "Qt Creator",
+            "STM32Cube"
+        ],
+        "experiences": [
+            {
+                "period": "2022.09 – 재직중",
+                "title": "선임연구원 / Senior Software Developer",
+                "company": "(주) 뉴케어",
+                "highlights": [
+                    "데스크톱: 방사선 검출기와 Bluetooth/USB 통신, 프로토콜 정의, WPF/MFC UI, Infragistics 차트, 장치-PC 동기화, USB/소켓 명령 처리.",
+                    "임베디드: 리눅스 기반 휴대용 검출기 앱, USB/WiFi, 커스텀 키보드, STM32 기반 CSV/PDF 리포트, USB HID 통신, Buildroot.",
+                    "웹: 실시간 모니터링, 이력 DB 재설계, 지도 기반 추적, 선량/스펙트럼 시각화 (ReactJS, Flask, Spring Boot, MyBatis).",
+                    "스택: C#, WPF, C++/MFC, MVVM Light, Infragistics, SQLite, Socket/Serial, Linux Buildroot, Qt, STM32."
+                ]
+            },
+            {
+                "period": "2018.09 – 2022.09",
+                "title": "과장 / Senior Software Developer",
+                "company": "BNF Technology",
+                "highlights": [
+                    "HanPrism Insight 3.0 풀스택(C#/ASP.NET Web API + Angular).",
+                    "실시간: 선형 차트(Highcharts), 미믹 시뮬레이션(SignalR), 대시보드 빌더, 알람.",
+                    "삼성 에너지 관리 시스템: 10+ 대시보드(분석/리포팅).",
+                    "KOEN Mobile(Java Spring): 보안/권한/모바일 API 개선.",
+                    "주요 역할: 워크플로우·DB·백엔드 설계, Web API, 프론트엔드 구현, 버그 수정, 신기술 검토, 주니어 멘토링.",
+                    "스택: C#, ASP.NET MVC/Web API, Angular, TypeScript, Highcharts, SignalR, DevExpress, EF, MySQL/MariaDB, Java Spring, Git/SVN."
+                ]
+            },
+            {
+                "period": "2012.11 – 2018.09",
+                "title": "Senior Developer / Senior Engineer",
+                "company": "FPT Software",
+                "highlights": [
+                    "호주/싱가포르/영국 고객 프로젝트: Biddly Contests, CdmPrint, R4YL, MOE(싱가포르 교육부), MSO(영국 모기지).",
+                    "요구사항·시스템 설계, Web API/WCF 백엔드, MVC/JavaScript 프론트엔드, 결제·인증·워크플로우 구현, 최적화/테스트.",
+                    "스택: C#, ASP.NET MVC/Web API, WCF, Entity Framework, PetaPoco, HTML5/CSS3, jQuery, KendoUI, MVVM JS, Umbraco, SQL Server, SVN/Git."
+                ]
+            },
+            {
+                "period": "2008.03 – 2012.11",
+                "title": "Senior Developer",
+                "company": "CMC Software (OSDC)",
+                "highlights": [
+                    "미국/일본 프로젝트: CRM Web API, Calphalon e-Commerce, Cooking.com, EAS(일본) 프로젝트 관리 포털.",
+                    "핵심 기능: 전자상거래 결제, 인증, 워크플로우, 리포팅, 타임시트 등.",
+                    "스택: C#, ASP.NET MVC/Web API, LINQ, WCF, Java Spring MVC, HTML5/CSS3/JS, DI(Ninject/Windsor/Seasar), SQL Server/MySQL, NUnit, TFS/SVN."
+                ]
+            },
+            {
+                "period": "2006.06 – 2008.02",
+                "title": "대리 / Software Developer (Windows)",
+                "company": "AVASYS Vietnam (EPSON)",
+                "highlights": [
+                    "데스크톱 유틸리티 개발 및 유지보수: Printer Support/Setting, Drawing, Scanner, Zebra Printer.",
+                    "스택: Visual C++ MFC, WinForms, XML/INI 구성, UI 폼 디자인, 멀티스레딩."
+                ]
+            }
+        ]
+    },
+    "profile": {
+        "contact": {
+            "portfolio": "https://your-portfolio.com",
+            "linkedin": "https://www.linkedin.com/in/nguyenviethien",
+            "stackoverflow": "https://stackoverflow.com/users/4964569",
+            "github": "https://github.com/nguyenviethien"
+        },
+        "heroImage": {
+            "src": "/assets/hanprism-hero.svg",
+            "alt": "Composite of HanPrism Insight dashboards and controls"
+        }
+    }
 }
