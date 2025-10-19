@@ -166,7 +166,8 @@ function App() {
     };
   }, [lang]);
   const [cvData, setCvData] = useState(null);
-  const profile = (cvData && cvData.profile) ? cvData.profile : { contact: {}, heroImage: {} };
+  
+  const stackoverflowId = (profile && profile.stackoverflowId) || (() => { const url = (profile && profile.contact && profile.contact.stackoverflow) || ''; const m = url.match(/\/users\/(\d+)/); return m ? m[1] : null; })();
   const [productsData, setProductsData] = useState(null);
   useEffect(() => {
     let active = true;
@@ -332,8 +333,8 @@ function App() {
         </section>
 
         {/* Community section moved to the end */}
-        {!!profile.stackoverflowId && (
-          <StackOverflowSection t={t} userId={profile.stackoverflowId} />
+        {!!stackoverflowId && (
+          <StackOverflowSection t={t} userId={stackoverflowId} />
         )}
       </main>
 
@@ -734,5 +735,6 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
