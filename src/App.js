@@ -167,7 +167,7 @@ function App() {
   }, [lang]);
   const [cvData, setCvData] = useState(null);
   const profile = (cvData && cvData.profile) ? cvData.profile : { contact: {}, heroImage: {} };
-  const stackoverflowId = profile?.stackoverflowId ?? (profile?.contact?.stackoverflow?.match(/\/users\/(\\d+)/)?.[1] ?? null); const m = url.match(/\/users\/(\d+)/); return m ? m[1] : null; })();
+  const stackoverflowId = profile?.stackoverflowId ?? (profile?.contact?.stackoverflow?.match(/\/users\/(\d+)/)?.[1] ?? null); const m = url.match(/\/users\/(\d+)/); return m ? m[1] : null; })();
   const [productsData, setProductsData] = useState(null);
   useEffect(() => {
     let active = true;
@@ -735,6 +735,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
