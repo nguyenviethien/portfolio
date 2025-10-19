@@ -167,12 +167,12 @@ function App() {
   }, [lang]);
   const [cvData, setCvData] = useState(null);
   const profile = (cvData && cvData.profile) ? cvData.profile : { contact: {}, heroImage: {} };
-  const stackoverflowId = profile?.stackoverflowId ?? (profile?.contact?.stackoverflow?.match(/\/users\/(\d+)/)?.[1] ?? null); const m = url.match(/\/users\/(\d+)/); return m ? m[1] : null; })();
+  const stackoverflowId = 4964569;
   const [productsData, setProductsData] = useState(null);
   useEffect(() => {
     let active = true;
     const bust = (process.env.REACT_APP_BUILD || Date.now());
-    fetch(process.env.PUBLIC_URL + '/assets/cv.json?v=' + bust, { cache: 'no-cache' })
+    const cvUrl = process.env.PUBLIC_URL + (lang === 'en' ? '/assets/cv_en.json' : '/assets/cv.json') + '?v=' + bust;\n    fetch(cvUrl, { cache: 'no-cache' })
       .then((r) => (r.ok ? r.json() : null))
       .then((json) => {
         if (active) setCvData(json);
@@ -187,7 +187,7 @@ function App() {
     return () => {
       active = false;
     };
-  }, []);
+  }, [lang]);
 
   // Override hero with provided resume summary and contacts
   const heroDefaults = {
@@ -735,6 +735,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
