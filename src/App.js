@@ -167,7 +167,7 @@ function App() {
   }, [lang]);
   const [cvData, setCvData] = useState(null);
   const profile = (cvData && cvData.profile) ? cvData.profile : { contact: {}, heroImage: {} };
-  const stackoverflowId = 4964569;
+  const stackoverflowId = profile?.stackoverflowId ?? (profile?.contact?.stackoverflow?.match(/\/users\/(\d+)/)?.[1] ?? null); const m = url.match(/\/users\/(\d+)/); return m ? m[1] : null; })();
   const [productsData, setProductsData] = useState(null);
   useEffect(() => {
     let active = true;
@@ -407,7 +407,7 @@ function ResumeSection({ t, resumeData }) {
     };
   }, [resumeData]);
   if (!data) return null;
-  const { experiences = [], skills = [], education = [] } = data;\n  // Normalize highlights: allow a single multi-line string or an array\n  const normExperiences = experiences.map((ex) => {\n    const hl = ex && ex.highlights;\n    let list = [];\n    if (Array.isArray(hl)) list = hl;\n    else if (typeof hl === 'string') list = hl.split(/\\r?\\n+/).map((s) => s.trim()).filter(Boolean);\n    return { ...ex, highlights: list };\n  });
+  const { experiences = [], skills = [], education = [] } = data;
   return (
     <section className="section">
       <h2>{t ? t('resume') : 'Resume'}</h2>
@@ -423,9 +423,9 @@ function ResumeSection({ t, resumeData }) {
         </div>
       )}
       {/* Summary removed as requested */}
-      {normExperiences?.length > 0 && (
+      {experiences?.length > 0 && (
         <div className="timeline" style={{ marginTop: 24 }}>
-          {normExperiences.map((ex, i) => (
+          {experiences.map((ex, i) => (
             <article key={(ex.company || ex.title || 'exp') + i} className="timeline__item">
               <header className="timeline__header">
                 <span className="timeline__period">{ex.period}</span>
@@ -434,7 +434,7 @@ function ResumeSection({ t, resumeData }) {
                   {ex.company && <p className="timeline__company">{ex.company}</p>}
                 </div>
               </header>
-              {ex.highlights && ex.highlights.length > 0 && (
+              {ex.highlights?.length > 0 && (
                 <ul className="timeline__highlights">
                   {ex.highlights.map((h) => (
                     <li key={h}>{h}</li>
@@ -735,7 +735,6 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
-
 
 
 
