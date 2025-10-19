@@ -1,0 +1,128 @@
+﻿{
+    "profile":  {
+                    "contact":  {
+                                    "stackoverflow":  "https://stackoverflow.com/users/4964569",
+                                    "linkedin":  "https://www.linkedin.com/in/nguyenviethien",
+                                    "portfolio":  "https://your-portfolio.com",
+                                    "github":  "https://github.com/nguyenviethien"
+                                },
+                    "heroImage":  {
+                                      "src":  "/assets/hanprism-hero.svg",
+                                      "alt":  "Composite of HanPrism Insight dashboards and controls"
+                                  }
+                },
+    "hero":  {
+                 "name":  "Nguyen Viet Hien",
+                 "phone":  "010-8683-1183",
+                 "email":  "nguyenviethien@gmail.com",
+                 "summary":  [
+                                 "Senior software developer with 19+ years across desktop, embedded, and web.",
+                                 "Hands-on with device communication (USB/BLE/Socket), real-time UIs, and data systems.",
+                                 "Comfortable in C#/.NET, WPF/MFC, C++/Qt, React, Python/Flask, Java/Spring."
+                             ],
+                 "title":  "Senior Software Developer",
+                 "address":  "Seoul, South Korea"
+             },
+    "resume":  {
+                   "education":  [
+                                     "2012.09 – 2014.06 · Graduate Program (Business Administration) · GPA 84/100",
+                                     "2001.09 – 2006.05 · Hanoi University of Science and Technology · Information Technology · GPA 75/100"
+                                 ],
+                   "experiences":  [
+                                       {
+                                           "title":  "Senior Software Developer (Desktop, Embedded, Web Applications)",
+                                           "company":  "Nucare Co., Ltd.",
+                                           "period":  "2022.09 – Present",
+                                           "highlights":  [
+                                                              "Desktop: Communicated with radiation detectors via Bluetooth/USB/TCP sockets; defined protocols; designed WPF/MFC UIs; integrated Infragistics charts; designed file/DB structures and device–PC sync; implemented command handling over USB/sockets.",
+                                                              "Embedded: Designed and implemented an embedded app for a Linux-based handheld radiation detector; USB/WiFi; custom on-screen keyboard; STM32-based CSV/PDF reporting; USB HID protocol; Buildroot.",
+                                                              "Web: Maintained and extended realtime monitoring; redesigned history database; map-based tracking; dose/spectrum visualization (ReactJS, Flask, Spring Boot, MyBatis).",
+                                                              "Stack: C#, WPF, C++/MFC, MVVM Light, Infragistics, SQLite, Socket/Serial, Linux Buildroot, Qt, STM32."
+                                                          ]
+                                       },
+                                       {
+                                           "title":  "Senior Software Developer",
+                                           "company":  "BNF Technology",
+                                           "period":  "2018.09 – 2022.09",
+                                           "highlights":  [
+                                                              "HanPrism Insight 3.0 full stack (C#/ASP.NET Web API + Angular).",
+                                                              "Implemented charts (Highcharts), realtime updates (SignalR), and UI components.",
+                                                              "Maintained and refactored 10+ internal web applications and services.",
+                                                              "KOEN Mobile (Java Spring): login/session, file upload, and REST APIs.",
+                                                              "Responsibilities: data model redesign, Web API, performance tuning, bug fixing, and CI usage.",
+                                                              "Stack: C#, ASP.NET MVC/Web API, Angular, TypeScript, Highcharts, SignalR, DevExpress, EF, MySQL/MariaDB, Java Spring, Git/SVN."
+                                                          ]
+                                       },
+                                       {
+                                           "title":  "Senior Developer / Senior Engineer",
+                                           "company":  "FPT Software",
+                                           "period":  "2012.11 – 2018.09",
+                                           "highlights":  [
+                                                              "Delivered enterprise solutions as Senior Developer / Senior Engineer.",
+                                                              "Projects: Biddly Contests, CdmPrint, R4YL, MOE (education modules), MSO (operations).",
+                                                              "Responsibilities: Web API/WCF services, MVC/JavaScript frontends, database refactoring, and integration.",
+                                                              "Stack: C#, ASP.NET MVC/Web API, WCF, Entity Framework, PetaPoco, HTML5/CSS3, jQuery, KendoUI, MVVM JS, Umbraco, SQL Server, SVN/Git."
+                                                          ]
+                                       },
+                                       {
+                                           "title":  "Senior Developer",
+                                           "company":  "CMC Software (OSDC)",
+                                           "period":  "2008.03 – 2012.11",
+                                           "highlights":  [
+                                                              "CRM Web API and e-commerce projects: Calphalon, Cooking.com, EAS.",
+                                                              "Responsibilities: backend/API, MVC UI, database schema and optimization, integrations.",
+                                                              "Stack: C#, ASP.NET MVC/Web API, LINQ, WCF, Java Spring MVC, HTML5/CSS3/JS, DI (Ninject/Windsor/Seasar), SQL Server/MySQL, NUnit, TFS/SVN."
+                                                          ]
+                                       },
+                                       {
+                                           "title":  "Software Developer",
+                                           "company":  "AVASYS Vietnam (EPSON)",
+                                           "period":  "2006.06 – 2008.02",
+                                           "highlights":  [
+                                                              "Developed Windows utilities: printer support/setting, drawing, scanner, Zebra printer.",
+                                                              "Stack: Visual C++ MFC, WinForms, XML/INI, UI components, device integration."
+                                                          ]
+                                       }
+                                   ],
+                   "skills":  [
+                                  ".NET",
+                                  "C#",
+                                  "WPF",
+                                  "MFC",
+                                  "C++",
+                                  "Qt",
+                                  "ASP.NET MVC /Web API",
+                                  "Java",
+                                  "Spring Boot",
+                                  "Spring MVC",
+                                  "TypeScript",
+                                  "Angular",
+                                  "React",
+                                  "JavaScript",
+                                  "jQuery",
+                                  "Highcharts",
+                                  "SignalR",
+                                  "DevExpress",
+                                  "Entity Framework/JPA/MyBatis",
+                                  "MySQL",
+                                  "MariaDB",
+                                  "SQL Server",
+                                  "SQLite",
+                                  "Python/Flask",
+                                  "HTML5",
+                                  "CSS3",
+                                  "Tomcat",
+                                  "Git",
+                                  "SVN",
+                                  "Socket",
+                                  "Serial",
+                                  "USB HID",
+                                  "Embedded Linux (Buildroot)",
+                                  "Visual Studio 2022",
+                                  "Visual Code",
+                                  "Eclipse",
+                                  "Qt Creator",
+                                  "STM32Cube"
+                              ]
+               }
+}
