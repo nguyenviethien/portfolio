@@ -172,7 +172,8 @@ function App() {
   useEffect(() => {
     let active = true;
     const bust = (process.env.REACT_APP_BUILD || Date.now());
-    const cvUrl = process.env.PUBLIC_URL + (lang === 'en' ? '/assets/cv_en.json' : '/assets/cv.json') + '?v=' + bust;\n    fetch(cvUrl, { cache: 'no-cache' })
+    const cvUrl = process.env.PUBLIC_URL + (lang === 'en' ? '/assets/cv_en.json' : '/assets/cv.json') + '?v=' + bust;
+    fetch(cvUrl, { cache: 'no-cache' })
       .then((r) => (r.ok ? r.json() : null))
       .then((json) => {
         if (active) setCvData(json);
@@ -735,6 +736,7 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
 
 
