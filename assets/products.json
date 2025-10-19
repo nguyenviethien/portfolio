@@ -1,44 +1,52 @@
-﻿{
-    "rows":  [
-                 {
-                     "id":  "esave",
-                     "product":  "eSave",
-                     "title":  "eSave",
-                     "description":  "",
-                     "tone":  "blue",
-                     "folder":  "esave"
-                 },
-                 {
-                     "id":  "radtag",
-                     "product":  "RadTag",
-                     "title":  "RadTag",
-                     "description":  "Cloud dashboards for radiation device data",
-                     "tone":  "green",
-                     "folder":  "radtag"
-                 },
-                 {
-                     "id":  "erm",
-                     "product":  "ERM",
-                     "title":  "ERM",
-                     "description":  "Python/Flask, SessionBus, Spring Boot, MyBatis",
-                     "tone":  "purple",
-                     "folder":  "erm"
-                 },
-                 {
-                     "id":  "peakgo",
-                     "product":  "PeakGo",
-                     "title":  "PeakGo",
-                     "description":  "Bluetooth-connected radiation detector app",
-                     "tone":  "blue",
-                     "folder":  "peakgo"
-                 },
-                 {
-                     "id":  "peakid",
-                     "product":  "PeakID",
-                     "title":  "PeakID",
-                     "description":  "Desktop data analysis for spectra",
-                     "tone":  "green",
-                     "folder":  "peakid"
-                 }
-             ]
+{
+  "rows": [
+    {
+      "id": "hanprismweb",
+      "product": "HanPrismWeb",
+      "title": "Design and view monitoring dashboard system",
+      "description": "C#, Web API, Angular, Typescript, Javascript, CSS",
+      "tone": "blue",
+      "folder": "hanprismweb"
+    },
+    {
+      "id": "esave",
+      "product": "eSave",
+      "title": "Samsung Mechanics Energy Saving System",
+      "description": "C#, Database design, WinForm, DevExpress",
+      "tone": "blue",
+      "folder": "esave"
+    },
+    {
+      "id": "radtag",
+      "product": "RadTag",
+      "title": "Desktop and Cloud dashboards for temprature & radiation device",
+      "description": "C#, WPF, Infragistics chart, SQLite, C MCU",
+      "tone": "green",
+      "folder": "radtag"
+    },
+    {
+      "id": "erm",
+      "product": "ERM",
+      "title": "Radiation device realtime monitoring system",
+      "description": "Python/Flask, ReactJs, Spring Boot, MyBatis",
+      "tone": "purple",
+      "folder": "erm"
+    },
+    {
+      "id": "peakgo",
+      "product": "PeakGo",
+      "title": "Bluetooth-connected radiation detector app",
+      "description": "C++/MFC, Bluetooth, Socket",
+      "tone": "blue",
+      "folder": "peakgo"
+    },
+    {
+      "id": "peakid",
+      "product": "PeakID",
+      "title": "Device data analysis and device history app",
+      "description": "C#, WPF, Infragistics chart",
+      "tone": "green",
+      "folder": "peakid"
+    }
+  ]
 }
