@@ -1,5 +1,4 @@
 import './App.css';
-import { profile, caseStudies } from './data/portfolio';
 import { useEffect, useRef, useState } from 'react';
 
 // Load certificates from src/document/certificate at build time
@@ -167,6 +166,7 @@ function App() {
     };
   }, [lang]);
   const [cvData, setCvData] = useState(null);
+  const profile = (cvData && cvData.profile) ? cvData.profile : { contact: {}, heroImage: {} };
   const [productsData, setProductsData] = useState(null);
   useEffect(() => {
     let active = true;
@@ -734,4 +734,5 @@ function StackOverflowSection({ userId, t }) {
     </section>
   );
 }
+
 
