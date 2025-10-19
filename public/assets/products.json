@@ -1,6 +1,14 @@
 {
   "rows": [
     {
+      "id": "hanprismweb",
+      "product": "hanprismweb",
+      "title": "hanprismweb",
+      "description": "",
+      "tone": "blue",
+      "folder": "hanprismweb"
+    },
+    {
       "id": "esave",
       "product": "eSave",
       "title": "eSave",
@@ -18,8 +26,8 @@
     },
     {
       "id": "erm",
-      "product": "�<\u000f�<o��, ��c�,��,� ��?�<o�<o�S\u000f�.o",
-      "title": "�<\u000f�<o��, ��c�,��,� ��?�<o�<o�S\u000f�.o",
+      "product": "erm",
+      "title": "erm",
       "description": "Python/Flask, SessionBus, Spring Boot, MyBatis",
       "tone": "purple",
       "folder": "erm"

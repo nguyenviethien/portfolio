@@ -219,17 +219,18 @@ function App() {
   // Product images from folder take priority; fall back to defaults
   const productImages = loadHanprismWebImages();
   const folderImages = (folder) => loadProductImages(folder).map((it) => ({ src: it.url, alt: it.name }));
-  const displayCaseStudies = caseStudies.map((cs) => {
-    let imgs = [];
-    if (cs.id === 'dashboard-suite' && productImages.dashboard.length) {
-      imgs = productImages.dashboard.map((it) => ({ src: it.url, alt: it.name }));
-    } else if (cs.id === 'alert-governance' && productImages.alert.length) {
-      imgs = productImages.alert.map((it) => ({ src: it.url, alt: it.name }));
-    } else if (cs.id === 'mimic-builder' && productImages.mimic.length) {
-      imgs = productImages.mimic.map((it) => ({ src: it.url, alt: it.name }));
-    }
-    return { ...cs, images: imgs.length ? imgs : cs.images };
-  });
+  const displayCaseStudies = [];
+  // const displayCaseStudies = caseStudies.map((cs) => {
+  //   let imgs = [];
+  //   // if (cs.id === 'dashboard-suite' && productImages.dashboard.length) {
+  //   //   imgs = productImages.dashboard.map((it) => ({ src: it.url, alt: it.name }));
+  //   // } else if (cs.id === 'alert-governance' && productImages.alert.length) {
+  //   //   imgs = productImages.alert.map((it) => ({ src: it.url, alt: it.name }));
+  //   // } else if (cs.id === 'mimic-builder' && productImages.mimic.length) {
+  //   //   imgs = productImages.mimic.map((it) => ({ src: it.url, alt: it.name }));
+  //   // }
+  //   return { ...cs, images: imgs.length ? imgs : cs.images };
+  // });
 
   return (
     <div className="app">
