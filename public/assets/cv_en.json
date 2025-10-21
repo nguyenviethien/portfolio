@@ -21,12 +21,12 @@
                                  "Comfortable in C#/.NET, WPF/MFC, C++/Qt, React, Python/Flask, Java/Spring."
                              ],
                  "title":  "Senior Software Developer",
-                 "address":  "Seoul, South Korea"
+                 "address":  "Daejeon, South Korea"
              },
     "resume":  {
                    "education":  [
-                                     "2012.09 – 2014.06 · Graduate Program (Business Administration) · GPA 84/100",
-                                     "2001.09 – 2006.05 · Hanoi University of Science and Technology · Information Technology · GPA 75/100"
+                                     "2012.09 – 2014.06 · Hanoi Foreign Trade University (Business Administration)",
+                                     "2001.09 – 2006.05 · Hanoi University of Science and Technology · Information Technology"
                                  ],
                    "experiences":  [
                                        {
@@ -76,7 +76,7 @@
                                        },
                                        {
                                            "title":  "Software Developer",
-                                           "company":  "AVASYS Vietnam (EPSON)",
+                                           "company":  "EPSON AVASYS Vietnam",
                                            "period":  "2006.06 – 2008.02",
                                            "highlights":  [
                                                               "Developed Windows utilities: printer support/setting, drawing, scanner, Zebra printer.",

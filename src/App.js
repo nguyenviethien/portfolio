@@ -483,6 +483,7 @@ function ResumeSection({ t, resumeData }) {
               s === 'tomcat' ||
               s === 'git' ||
               s === 'svn' ||
+              s === 'cicd' ||
               s.includes('visual studio code') ||
               s.includes('visual code') ||
               s.includes('visual studio 2022') ||

@@ -2,49 +2,49 @@
   "rows": [
     {
       "id": "hanprismweb",
-      "product": "hanprismweb",
-      "title": "hanprismweb",
-      "description": "",
+      "product": "HanPrismWeb",
+      "title": "Design and view monitoring dashboard system",
+      "description": "C#, Web API, Angular, Typescript, Javascript, CSS",
       "tone": "blue",
       "folder": "hanprismweb"
     },
     {
       "id": "esave",
       "product": "eSave",
-      "title": "eSave",
-      "description": "",
+      "title": "Samsung Mechanics Energy Saving System",
+      "description": "C#, Database design, WinForm, DevExpress",
       "tone": "blue",
       "folder": "esave"
     },
     {
       "id": "radtag",
       "product": "RadTag",
-      "title": "RadTag",
-      "description": "Cloud dashboards for radiation device data",
+      "title": "Desktop and Cloud dashboards for temprature & radiation device",
+      "description": "C#, WPF, Infragistics chart, SQLite, C MCU",
       "tone": "green",
       "folder": "radtag"
     },
     {
       "id": "erm",
-      "product": "erm",
-      "title": "erm",
-      "description": "Python/Flask, SessionBus, Spring Boot, MyBatis",
+      "product": "ERM",
+      "title": "Radiation device realtime monitoring system",
+      "description": "Python/Flask, ReactJs, Spring Boot, MyBatis",
       "tone": "purple",
       "folder": "erm"
     },
     {
       "id": "peakgo",
       "product": "PeakGo",
-      "title": "PeakGo",
-      "description": "Bluetooth-connected radiation detector app",
+      "title": "Bluetooth-connected radiation detector app",
+      "description": "C++/MFC, Bluetooth, Socket",
       "tone": "blue",
       "folder": "peakgo"
     },
     {
       "id": "peakid",
       "product": "PeakID",
-      "title": "PeakID",
-      "description": "Desktop data analysis for spectra",
+      "title": "Device data analysis and device history app",
+      "description": "C#, WPF, Infragistics chart",
       "tone": "green",
       "folder": "peakid"
     }
