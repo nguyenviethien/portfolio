@@ -27,27 +27,17 @@ function loadCertificates() {
 // Load images from a product subfolder under src/document/product
 function loadProductImages(subdir) {
   try {
-    let ctx;
-    if (subdir === 'esave') {
-      ctx = require.context('./document/product/esave', true, /\.(png|jpe?g|svg)$/i);
-    } else if (subdir === 'hanprismweb') {
-      ctx = require.context('./document/product/hanprismweb', true, /\.(png|jpe?g|svg)$/i);
-    } else if (subdir === 'erm') {
-      ctx = require.context('./document/product/erm', true, /\.(png|jpe?g|svg)$/i);
-    } else if (subdir === 'radtag') {
-      ctx = require.context('./document/product/radtag', true, /\.(png|jpe?g|svg)$/i);
-    } else if (subdir === 'peakgo') {
-      ctx = require.context('./document/product/peakgo', true, /\.(png|jpe?g|svg)$/i);
-    } else if (subdir === 'peakid') {
-      ctx = require.context('./document/product/peakid', true, /\.(png|jpe?g|svg)$/i);
-    } else {
-      return [];
-    }
-    const items = ctx.keys().map((k) => {
-      const url = ctx(k);
-      const name = k.replace(/^\.\//, '');
-      return { name, url };
-    });
+    // Include all product images and then filter by folder name
+    const ctx = require.context('./document/product', true, /\.(png|jpe?g|svg)$/i);
+    const prefix = './' + subdir.replace(/^[./]+/, '') + '/';
+    const items = ctx
+      .keys()
+      .filter((k) => k.startsWith(prefix))
+      .map((k) => {
+        const url = ctx(k);
+        const name = k.replace(/^\.\//, '');
+        return { name, url };
+      });
     return items;
   } catch (e) {
     return [];

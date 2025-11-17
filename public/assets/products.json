@@ -43,10 +43,34 @@
     {
       "id": "peakid",
       "product": "PeakID",
-      "title": "Device data analysis and device history app",
-      "description": "C#, WPF, Infragistics chart",
+      "title": "Device realtime data analysis and device history app",
+      "description": "C#, WPF, Infragistics chart, Qt Widget, Buildroot",
       "tone": "green",
       "folder": "peakid"
+    },
+    {
+      "id": "computervision",
+      "product": "Computer Vision",
+      "title": "Object detection and image segmentation with YOLO",
+      "description": "Python, OpenCV, YOLO, image processing",
+      "tone": "purple",
+      "folder": "computervision"
+    },
+    {
+      "id": "drone",
+      "product": "Drone Simulation",
+      "title": "Drone control and simulation with ArduPilot and QGroundControl",
+      "description": "ArduPilot, QGroundControl, UAV simulation",
+      "tone": "blue",
+      "folder": "drone"
+    },
+    {
+      "id": "sterilizer",
+      "product": "Multi-purpose Sterilizer",
+      "title": "Multi-purpose sterilizer control and monitoring",
+      "description": "Qt QML, Yocto, Raspberry Pi 4",
+      "tone": "green",
+      "folder": "sterilizer"
     }
   ]
 }
