@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.d2416270.css",
-    "main.js": "./static/js/main.1e976d87.js",
+    "main.js": "./static/js/main.b8314066.js",
     "static/js/179.3b60ae75.chunk.js": "./static/js/179.3b60ae75.chunk.js",
     "static/js/453.7ed5e4c9.chunk.js": "./static/js/453.7ed5e4c9.chunk.js",
     "static/js/729.833fc316.chunk.js": "./static/js/729.833fc316.chunk.js",
@@ -41,6 +41,7 @@
     "static/media/peakgo make calibration and background for device.png": "./static/media/peakgo make calibration and background for device.1ddbb15e480375e701d2.png",
     "static/media/peakgo mainscreen connect to device via bluetooth and receive realtime data and isotope.png": "./static/media/peakgo mainscreen connect to device via bluetooth and receive realtime data and isotope.2de23233b83757792c8c.png",
     "static/media/erm측정 데이터 확인.png": "./static/media/erm측정 데이터 확인.70d71966ccc1e1ef0e6e.png",
+    "static/media/display data from simulation LIDAR camera.png": "./static/media/display data from simulation LIDAR camera.d895e1f01b9a2b144d84.png",
     "static/media/peakiv pair with mobile device to get realtime data.png": "./static/media/peakiv pair with mobile device to get realtime data.1ad6f3406b8d3a4e8029.png",
     "static/media/HanPrism Insight product Dashboard Edit mode2.png": "./static/media/HanPrism Insight product Dashboard Edit mode2.9a48d517a46713482af8.png",
     "static/media/peakid Spectrum and Data analysis.png": "./static/media/peakid Spectrum and Data analysis.d9239f603a7bd5c013c0.png",
@@ -54,20 +55,21 @@
     "static/media/radtagcloud1.png": "./static/media/radtagcloud1.8199ce3e5fb33e0206b0.png",
     "static/media/erm센서 수정 화면.png": "./static/media/erm센서 수정 화면.3f475e568c57e396d7f2.png",
     "static/media/erm모니터링 시스템 로그인 화면.png": "./static/media/erm모니터링 시스템 로그인 화면.de3c93f7e1dbe61da9b9.png",
-    "static/media/hiencv.jpg": "./static/media/hiencv.9414319ef3d5ff39ba54.jpg",
+    "static/media/hiencv1.jpg": "./static/media/hiencv1.9414319ef3d5ff39ba54.jpg",
     "static/media/multi-purpose-sterilizer admin setting.png": "./static/media/multi-purpose-sterilizer admin setting.d5f6e41e2e1e711d8e96.png",
     "static/media/Predix Certificate.JPG": "./static/media/Predix Certificate.3c9b3e2bd6a3270c775d.JPG",
     "static/media/multi-purpose-sterilizer sequence setting.png": "./static/media/multi-purpose-sterilizer sequence setting.759b16ddd57e9e05c5bd.png",
+    "static/media/hiencv.png": "./static/media/hiencv.bf97ce97b86ef93a9a40.png",
     "static/media/multi-purpose-sterilizer menu.png": "./static/media/multi-purpose-sterilizer menu.0b8e08c6217f8d072700.png",
     "index.html": "./index.html",
     "main.d2416270.css.map": "./static/css/main.d2416270.css.map",
-    "main.1e976d87.js.map": "./static/js/main.1e976d87.js.map",
+    "main.b8314066.js.map": "./static/js/main.b8314066.js.map",
     "179.3b60ae75.chunk.js.map": "./static/js/179.3b60ae75.chunk.js.map",
     "453.7ed5e4c9.chunk.js.map": "./static/js/453.7ed5e4c9.chunk.js.map",
     "729.833fc316.chunk.js.map": "./static/js/729.833fc316.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d2416270.css",
-    "static/js/main.1e976d87.js"
+    "static/js/main.b8314066.js"
   ]
 }
