@@ -2,7 +2,7 @@
   "name": "cv-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nguyenviethien.github.io/portfolio",
+  "homepage": "https://nguyenviethien.github.io/Portfolio",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.8.0",
