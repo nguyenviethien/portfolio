@@ -1,17 +1,17 @@
 export const profile = {
-  name: 'Your Name',
-  title: 'Senior Product Designer',
-  location: 'Seoul, South Korea',
+  name: 'Nguyen Viet Hien',
+  title: 'Senior Software Engineer',
+  location: 'Daejeon, South Korea',
   summary: [
     'Designing data-dense industrial platforms that pair mission-critical insight with intuitive workflows.',
     'Led the end-to-end UX for HanPrism Insight 3.1, delivering cohesive dashboard, alarm, and mimic experiences.',
     'Partnered with cross-functional teams to ship reliable tools for power plant operators and energy analysts.'
   ],
   contact: {
-    email: 'you@example.com',
-    phone: '+82-10-1234-5678',
-    portfolio: 'https://your-portfolio.com',
-    linkedin: 'https://www.linkedin.com/in/yourprofile'
+    email: 'nguyenviethien@gmail.com',
+    phone: '010-8683-1183',
+    portfolio: 'https://nguyenviethien.github.io/portfolio/',
+    linkedin: ''
   },
   heroImage: {
     src: process.env.PUBLIC_URL + '/assets/hanprism-hero.svg',
