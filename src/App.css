@@ -191,17 +191,6 @@
   line-height: 1.7;
 }
 
-.skills-column p {
-  color: var(--text-secondary);
-  line-height: 1.7;
-}
-
-.project-stack {
-  margin-top: 16px;
-  color: var(--accent-green) !important;
-  font-weight: 600;
-}
-
 .timeline {
   display: grid;
   gap: 24px;
