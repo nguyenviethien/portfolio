@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "name": "Nguyen Viet Hien",
+    "title": "Senior Software Engineer | Device Control and System Integration",
+    "email": "nguyenviethien@gmail.com",
+    "phone": "010-8683-1183",
+    "address": "Yuseong-gu, Daejeon, South Korea",
+    "summary": [
+      "Software engineer with about 20 years of experience in device control, embedded software, real-time monitoring, and enterprise web systems.",
+      "Experienced with C/C++, C#, Qt/QML, WPF/MFC, hardware communication, HW/SW integration, and field troubleshooting.",
+      "Currently develops UAV ground-control, flight-controller, camera, gimbal, payload, telemetry, and real-time video functionality."
+    ]
+  },
+  "resume": {
+    "education": [
+      "2012.09 - 2014.06 | Master of Business Administration, Foreign Trade University, Hanoi",
+      "2001.09 - 2006.05 | BSc in Information Technology, Hanoi University of Science and Technology",
+      "Languages: Vietnamese (native), Korean (business conversation), English (business conversation, TOEIC 710)",
+      "Certifications: AWS Certified Solutions Architect, AWS Certified Developer, GE Predix Developer, UML System Analysis and Design, Engineer Information Processing"
+    ],
+    "skills": ["C", "C++", "C#", "Visual C++ MFC", "Qt/QML", "WPF", "Java", "Python", "Embedded Linux", "Buildroot", "STM32", "Android AOSP", "Docker", "USB HID", "Serial/UART", "Socket", "RTSP", "TCP/IP", "UDP", "MAVLink", "PX4", "ArduPilot", "ROS2", "MQTT", "ASP.NET MVC", "ASP.NET Web API", "Angular", "React", "Spring Boot", "Flask", "SQL Server", "MySQL", "MariaDB", "SQLite", "SignalR", "Highcharts", "OPC/PLC", "Git", "SVN"],
+    "experiences": [
+      {"period":"2025.12 - Present","title":"Senior Software Engineer","company":"Argosdyne / R&D","highlights":["Develop and maintain C++ and Qt/QML-based ALES QGC device-control UI and control logic.","Implement and validate MAVLink, PX4, ArduPilot, mission, geofence, RTL, and failsafe functionality.","Integrate ROS2, cameras, gimbals, payloads, RTSP video streaming, and TCP/UDP networking.","Support Embedded Linux, Docker, Android AOSP, and CE RED / EN 18031 security requirements."]},
+      {"period":"2022.09 - 2025.10","title":"Senior Software Engineer","company":"NuCare Co., Ltd. / R&D","highlights":["Developed Bluetooth and USB radiation-detector control software with C++ MFC and C# WPF.","Implemented USB, socket, and serial device control, multithreaded data collection, and SQLite storage.","Developed Buildroot, Qt/C++, STM32, USB HID, Wi-Fi, and web-monitoring functions for detection equipment."]},
+      {"period":"2018.09 - 2022.08","title":"Senior Software Engineer","company":"BNF Technology / R&D","highlights":["Built HanPrism Insight 3.0 with C#, ASP.NET Web API, and Angular.","Implemented real-time equipment visualization, alarms, dashboard builder, mimic simulation, and SignalR events.","Maintained energy-management and OPC/PLC integration systems while addressing performance and security issues."]},
+      {"period":"2012.11 - 2018.08","title":"Software Engineer","company":"FPT Software","highlights":["Designed enterprise and web systems for clients in Australia, Singapore, and the UK.","Implemented Web API/WCF, authentication, payments, workflows, database architecture, and performance optimization."]},
+      {"period":"2008.03 - 2012.10","title":"Software Engineer","company":"CMC Software","highlights":["Developed enterprise, CRM, and e-commerce systems for US and Japanese clients.","Implemented web services, UI, core business functions, issue analysis, and maintenance."]},
+      {"period":"2006.06 - 2008.02","title":"Software Developer","company":"AVASYS Vietnam / Windows Team","highlights":["Developed Visual C++ MFC utilities for printer support, printer settings, drawing tools, and scanners.","Implemented device-setting UI, XML/INI configuration, multithreading, and PC-to-device troubleshooting."]}
+    ]
+  }
+}
