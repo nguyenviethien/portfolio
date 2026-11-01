@@ -114,12 +114,15 @@ function PDFThumbnail({ url, width = 320, height = 220, title }) {
 }
 
 function App() {
+  const [lang, setLang] = useState(() => localStorage.getItem('portfolio-language') || 'ko');
   const [cvData, setCvData] = useState(null);
   const [productsData, setProductsData] = useState(null);
   useEffect(() => {
     let active = true;
     const bust = (process.env.REACT_APP_BUILD || Date.now());
-    fetch(process.env.PUBLIC_URL + '/assets/cv.json?v=' + bust, { cache: 'no-cache' })
+    localStorage.setItem('portfolio-language', lang);
+    const cvAsset = lang === 'ko' ? '/assets/cv_ko.json' : '/assets/cv.json';
+    fetch(process.env.PUBLIC_URL + cvAsset + '?v=' + bust, { cache: 'no-cache' })
       .then((r) => (r.ok ? r.json() : null))
       .then((json) => {
         if (active) setCvData(json);
@@ -134,7 +137,7 @@ function App() {
     return () => {
       active = false;
     };
-  }, []);
+  }, [lang]);
 
   // Override hero with provided resume summary and contacts
   /* Legacy fallback data was stored with a broken character encoding.
@@ -194,6 +197,13 @@ function App() {
   return (
     <div className="app">
       <header className="hero">
+        <div className="lang-switch">
+          <label htmlFor="lang" className="sr-only">Language</label>
+          <select id="lang" className="lang-select" value={lang} onChange={(event) => setLang(event.target.value)}>
+            <option value="ko">{'한국어'}</option>
+            <option value="en">English</option>
+          </select>
+        </div>
         <div className="hero__content">
           <div className="hero__top">
             {heroPhoto && (
